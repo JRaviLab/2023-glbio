@@ -22,6 +22,6 @@ We recently developed a web application, [MolEvolvR](http://jravilab.org/molevol
 - Max capacity: `TBD`
 
 ## Organizers
-- Faisal Alquaddoomi | [@alquaddoomi](//github.com/alquaddoomi)
+- Faisal Alquaddoomi | [@falquaddoomi](//github.com/falquaddoomi)
 - Jake Krol | [@jakekrol](//github.com/jakekrol)
 - Janani Ravi | [@jananiravi](//github.com/jananiravi)
