@@ -31,10 +31,10 @@ accept proteins from various phyla and perform the same sort of analyses.
 <img src="./images/psp-network.png" alt="psp-network" width="400"/>
 
 However, the transition from a quick one-off analysis to a scalable, flexible 
-web-app comes with a lot of challenges. In this workshop, we will teach the 
-skills necessary to efficiently make the transition.
+web-app comes with a lot of challenges. We aim to provide hands-on examples
+that show how to transform a smaller project into a fully-featured web-app.
 
-In this workshop, we'll guide through a similar scenario where we build an 
+We'll guide through a similar scenario where we build an 
 analysis pipeline from the ground-up using the best practices we've found over 
 the years of development.
 
