@@ -19,8 +19,8 @@ The workshop includes three main sections.
 
 1. Utilizing R markdown and quarto notebooks for quick, one-off analyses
 2. Streamlining an analysis pipline with R Shiny and deploying your app to the 
-public.
-3. Develop an R package API for programtic access to the app services.
+public
+3. Develop an R package API for programtic access to the app services
 
 The design of the workshop is inspired the development of our app, MolEvolvR. We 
 developed a one-off analysis pipeline for the Phage Shock Protein (PSP) 
