@@ -32,7 +32,7 @@ accept proteins from various phyla and perform the same sort of analyses.
 
 However, the transition from a quick one-off analysis to a scalable, flexible 
 web-app comes with a lot of challenges. In this workshop, we will teach the 
-skills necessary.
+skills necessary to efficiently make the transition.
 
 In this workshop, we'll guide through a similar scenario where we build an 
 analysis pipeline from the ground-up using the best practices we've found over 
