@@ -17,7 +17,7 @@ We recently developed a web application, [MolEvolvR](http://jravilab.org/molevol
 
 The workshop includes three main sections.
 
-1. Utilizing R markdown and quarto notebooks for quick, one-off analyses
+1. Utilizing R markdown and Quarto notebooks for quick, one-off analyses
 2. Streamlining an analysis pipline with R Shiny and deploying your app to the 
 public
 3. Develop an R package API for programtic access to the app services
@@ -34,13 +34,13 @@ However, the transition from a quick one-off analysis to a scalable, flexible
 web-app comes with a lot of challenges. We aim to provide hands-on examples
 that show how to transform a smaller project into a fully-featured web-app.
 
-We'll guide through a similar scenario where we build an 
-analysis pipeline from the ground-up using the best practices we've found over 
-the years of development.
+We'll guide participants through a similar scenario where we build an 
+analysis pipeline from the ground up using the best practices we've found over 
+years of development.
 
 Along the way, we'll briefly cover some soft technical skills such as version 
 control with git, environment management with docker, and overall programming 
-practices that make large, collaborative projects managable.
+practices that make large, collaborative projects more managable.
 
 
 ## When and where?
