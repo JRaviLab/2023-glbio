@@ -21,7 +21,7 @@ The workshop includes three main sections.
 2. Streamlining an analysis pipeline with R Shiny and deploying your app to the public
 3. Develop an R-package API for programmatic access to the app services
 
-The design of the workshop is inspired the development of our web-app,
+The design of the workshop is inspired by the development of our web-app,
 [MolEvolvR](http://jravilab.org/molevolvr), which is a generalized
 user-friendly version of a specific use-case we developed to study
 the Phage Shock Protein (PSP) stress response system 
