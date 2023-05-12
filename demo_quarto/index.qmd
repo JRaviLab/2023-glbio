@@ -1,0 +1,9 @@
+---
+title: "2023-glbio"
+---
+
+## What's Quarto?
+
+[Quarto](https://quarto.org) enables you to weave together content and executable code into a finished document. Explore Quarto's [formats](https://quarto.org/docs/output-formats/all-formats.html), [themes](https://quarto.org/docs/output-formats/html-themes.html), and more [here](https://quarto.org/docs/guide)!
+
+Quarto is language-agnostic: you can [install](https://quarto.org/docs/get-started/) it from the terminal, through RStudio, or VSCode. You can incorporate R/Py/Julia/Observable scripts seamlessly and weave them together into a single website, html_doc, dashboard, e-book, presentation, or publication of your choice!

@@ -1,0 +1,21 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "2023-glbio"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: tables.qmd
+        text: Tables
+
+
+format:
+  html:
+    theme: lumen
+    toc: true
+
+editor: visual
+

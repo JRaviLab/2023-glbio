@@ -1,0 +1,63 @@
+---
+title: "Tables"
+---
+
+```{r setup, eval=TRUE, echo=FALSE, include=FALSE, warning=FALSE}
+library(tidyverse)
+library(here)
+# library(shiny); library(shinydashboard); library(flexdashboard)
+library(DT)
+library(fontawesome)
+```
+
+# Let's build some tables!
+
+## Explore your IPR results here
+
+You can search, sort, and query the table interactively. In addition, you can show/hide specific columns using the `Column visibility` button.
+
+```{r load_data, eval=TRUE, echo=FALSE, include=FALSE, warning=FALSE}
+infile_ipr <- here("../iprscanr/inst/extdata/ex-out-CAA75348.tsv")
+ipr_combnd <- read_tsv(infile_ipr, col_names=F)
+
+ipr_colnames <- c("AccNum", "SeqMD5Digest", "SLength", "Analysis",
+                  "DB.ID", "SignDesc", "StartLoc", "StopLoc", "Score",
+                  "Status", "RunDate", "IPRAcc", "IPRDesc")
+colnames(ipr_combnd) <- ipr_colnames
+
+```
+
+```{r table, eval=TRUE, echo=FALSE, warning=FALSE}
+
+ipr_combnd <- ipr_combnd %>%
+  select(AccNum, Analysis, DB.ID, SignDesc,
+         StartLoc, StopLoc, SLength,
+         IPRAcc, IPRDesc) %>%
+	arrange(AccNum, StartLoc) #%>%
+	#filter(!is.na(AccNum))
+
+# blast_combnd %>%
+# 	filter(QueryName==input$QueryName) %>%
+# 	rmarkdown::paged_table()
+
+DT::datatable(ipr_combnd, extensions = c('Buttons', 'FixedColumns', 'RowReorder'),
+							options = list(
+	pageLength = 10,
+	#dom = 'Bfrtip',
+	#buttons = I('colvis'),
+	buttons=list(list(extend = 'colvis', columns = c(3:11))),
+	fixedColumns = list(leftColumns = 2), #, rightColumns = 1),
+	rowReorder = TRUE, order = list(c(0, 'asc')),
+	scrollX = TRUE,
+	lengthMenu = c(10, 25, 100)
+))
+
+
+# output$blast <- DT::renderDataTable(({
+#   DT::datatable(blast_combnd, filter='top',
+#                 options = list(orderClasses = TRUE, autoWidth=T))
+# }))
+#
+# DT::dataTableOutput("blast", height=1000, width=800)
+
+```
