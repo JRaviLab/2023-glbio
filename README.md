@@ -45,8 +45,22 @@ years of development.
 Along the way, we'll briefly cover some soft technical skills such as version 
 control with git, environment management with docker, and overall programming 
 best practices that make large, collaborative projects more manageable.
+***
 
+## Requirements and Set-up (before the workshop)
+### Overall
+- Test run [MolEvolvR](//jravilab.org/molevolvr) with example codes provided | Read [preprint](https://doi.org/10.1101/2022.02.18.461833) for context
+- Bring questions to the workshop!
 
+### For R-package 101
+1. Install the latest version of `RStudio` and `R` from [here](https://posit.co/download/rstudio-desktop)
+2. Install `devtools` (incl. `usethis`) | `install.packages("devtools", dependencies=T)`
+
+### For Dashboard and web-app 101
+1. Install `shiny`, `shinydashboard`
+2. Install [`quarto`](https://quarto.org) from RStudio/Terminal
+
+***
 ## When and where?
 - 📆`May 15, 2023` | `1–5p EST`
 - ▶️[Register here](https://www.iscb.org/glbio2023-register) | Registration for tutorials will close `May 5` if not already sold out. 
@@ -54,6 +68,6 @@ best practices that make large, collaborative projects more manageable.
 - Max capacity: `25`
 
 ## Organizers
-- Faisal Alquaddoomi | [@falquaddoomi](//github.com/falquaddoomi)
 - Jake Krol | [@jakekrol](//github.com/jakekrol)
+- Faisal Alquaddoomi | [@falquaddoomi](//github.com/falquaddoomi)
 - Janani Ravi | [@jananiravi](//github.com/jananiravi)
