@@ -8,6 +8,8 @@ library(here)
 # library(shiny); library(shinydashboard); library(flexdashboard)
 library(DT)
 library(fontawesome)
+# devtools::install_github("jravilab/iprscanr")
+library(iprscanr)
 ```
 
 # Let's build some tables!
@@ -17,7 +19,10 @@ library(fontawesome)
 You can search, sort, and query the table interactively. In addition, you can show/hide specific columns using the `Column visibility` button.
 
 ```{r load_data, eval=TRUE, echo=FALSE, include=FALSE, warning=FALSE}
-infile_ipr <- here("../iprscanr/inst/extdata/ex-out-CAA75348.tsv")
+
+
+infile_ipr <- system.file("inst/extdata/ex-out-CAA75348.tsv",
+                          package="iprscanr")
 ipr_combnd <- read_tsv(infile_ipr, col_names=F)
 
 ipr_colnames <- c("AccNum", "SeqMD5Digest", "SLength", "Analysis",

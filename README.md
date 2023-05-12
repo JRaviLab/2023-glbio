@@ -56,9 +56,13 @@ best practices that make large, collaborative projects more manageable.
 1. Install the latest version of `RStudio` and `R` from [here](https://posit.co/download/rstudio-desktop)
 2. Install `devtools` (incl. `usethis`) | `install.packages("devtools", dependencies=T)`
 
-### For Dashboard and web-app 101
-1. Install `shiny`, `shinydashboard`
-2. Install [`quarto`](https://quarto.org) from RStudio/Terminal
+### For Dashboard
+1. Install [`quarto`](https://quarto.org) from RStudio/Terminal
+
+### For Docker and web-app 101
+1. Install [docker desktop](https://www.docker.com/products/docker-desktop)
+
+
 
 ***
 ## When and where?

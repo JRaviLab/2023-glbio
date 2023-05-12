@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "2023-glbio",
     "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. Explore Quarto’s formats, themes, and more here!\nQuarto is language-agnostic: you can install from the terminal, through RStudio, or using pip install. You can incorporate R/Py/Julia scripts seamlessly and weave them together into a single website/html_doc/dashboard/presentation of your choice!"
+    "text": "Quarto enables you to weave together content and executable code into a finished document. Explore Quarto’s formats, themes, and more here!\nQuarto is language-agnostic: you can install it from the terminal, through RStudio, or VSCode. You can incorporate R/Py/Julia/Observable scripts seamlessly and weave them together into a single website, html_doc, dashboard, e-book, presentation, or publication of your choice!"
   },
   {
     "objectID": "tables.html",
