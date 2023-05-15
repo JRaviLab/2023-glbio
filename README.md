@@ -10,16 +10,16 @@ We recently developed a web application, [MolEvolvR](http://jravilab.org/molevol
 - When are you ready to set up a dashboard? When would you build a simple web-application instead?
 - How do you pick your feature list for your web-app? Some lessons and reflections. When is a feature function, package, or web-app ready?
 - Project management 101: how to set up version-controlled projects and repositories for collaborative computational biology projects (with other dry/wet-lab colleagues)?
+- R-package 101: When, why, and how would you create your first R-package?
 - Dashboard 101: How to develop a dashboard for your data/visualizations using Rmarkdown/Quarto?
 - Web-app 101: How to develop and host an interactive R Shiny web application?
-- R-package 101: When, why, and how would you create your first R-package?
 - Quick tour on how to set up the backend that supports a workflow, data tables and visualizations, for a multi-functional web-app such as MolEvolvR.
 
 The workshop includes three main sections.
 
-1. Utilizing R Markdown and Quarto notebooks (and dashboards) for quick, one-off analyses
-2. Streamlining an analysis pipeline with R Shiny and deploying your app to the public
-3. Develop an R-package API for programmatic access to the app services
+1. Develop an R-package API for programmatic access to the app services
+2. Utilizing Rmarkdown/Quarto notebooks (and dashboards) for quick, one-off analyses
+3. Streamlining an analysis pipeline with R Shiny and docker, and deploying your app to the public
 
 The design of the workshop is inspired by the development of our web-app,
 [MolEvolvR](http://jravilab.org/molevolvr), which is a generalized
@@ -29,7 +29,6 @@ the Phage Shock Protein (PSP) stress response system
 We found that the underlying method could be applied to a wide variety
 of biological questions and thus created a web-app that performs analysis of
 proteins by their sequence, structure, function, and evolution across the tree of life.
-
 
 <img src="./images/psp-network.png" alt="psp-network" width="400"/>
 
@@ -50,28 +49,30 @@ best practices that make large, collaborative projects more manageable.
 ## Requirements and Set-up (before the workshop)
 ### Overall
 - Test run [MolEvolvR](//jravilab.org/molevolvr) with example codes provided | Read [preprint](https://doi.org/10.1101/2022.02.18.461833) for context
+- Check out companion [PSP web-app](https://jravilab.shinyapps.io/psp-evolution) with fully populated data
 - Bring questions to the workshop!
 
 ### For R-package 101
 1. Install the latest version of `RStudio` and `R` from [here](https://posit.co/download/rstudio-desktop)
 2. Install `devtools` (incl. `usethis`) | `install.packages("devtools", dependencies=T)`
+3. Access and install R-package from here: [github.com/jravilab/iprscanr](//github.com/jravilab/iprscanr)
 
-### For Dashboard
+### For Quarto/dashboard
 1. Install [`quarto`](https://quarto.org) from RStudio/Terminal
+2. Quarto [material](https://github.com/JRaviLab/2023-glbio/tree/main/demo_quarto) and [output](https://jravilab.github.io/2023-glbio/demo_quarto/docs/)
 
 ### For Docker and web-app 101
 1. Install [docker desktop](https://www.docker.com/products/docker-desktop)
-
-
+2. Access docker + web-app material [here](https://github.com/JRaviLab/2023-glbio/tree/main/demo_webapp)
 
 ***
 ## When and where?
 - 📆`May 15, 2023` | `1–5p EST`
-- ▶️[Register here](https://www.iscb.org/glbio2023-register) | Registration for tutorials will close `May 5` if not already sold out. 
+- ▶️[Register here](https://www.iscb.org/glbio2023-register) | Registration until `May 5`. 
 - [Workshop/Tutorial URL on GLBIO](https://www.iscb.org/glbio2023-programme/workshops-tutorials)
 - Max capacity: `25`
 
 ## Organizers
-- Jake Krol | [@jakekrol](//github.com/jakekrol)
+- Jake Krol | [@jakekrol](//github.com/jakekrol) | on-site presenter
 - Faisal Alquaddoomi | [@falquaddoomi](//github.com/falquaddoomi)
 - Janani Ravi | [@jananiravi](//github.com/jananiravi)
