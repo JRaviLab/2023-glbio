@@ -2,49 +2,64 @@
 title: "Tables"
 ---
 
+
+# Let's build some tables!
+
 ```{r installations, eval=F, echo=F, include=F, warning=F}
-devtools::install_github("jravilab/iprscanr")
 # install.packages(c("tidyverse", "here"))
+# install.packages("devtools")
+# our package
+devtools::install_github("jravilab/iprscanr")
+# some table packages
 install.packages(c("fontawesome", "rmarkdown", "kableExtra", "gt", "DT"),
                  dependencies = T)
+# try out shiny/flex dashboard
+# install.packages(c("shiny", "shinydashboard", "flexdashboard"),
+                 # dependencies = T)
 ```
 
-```{r setup, eval=T, echo=F, include=F, warning=F}
+```{r load_libs, eval=T, echo=T, warning=F, include=FALSE}
 library(tidyverse)
 library(here)
 library(fontawesome)
-# data package
+# our data package
 library(iprscanr)
-# library(shiny); library(shinydashboard); library(flexdashboard)
 # table packages
 library(rmarkdown)
 library(kableExtra)
 library(DT)
 library(gt)
+# to try shiny/flex dashboard
+# library(shiny); library(shinydashboard); library(flexdashboard)
 ```
-
-# Let's build some tables!
 
 ## Explore your IPR results here
 
-You can search, sort, and query the table interactively. In addition, you can show/hide specific columns using the `Column visibility` button.
+```{r load_data, eval=T, echo=T, warning=F, include=F}
 
-```{r load_data, eval=TRUE, echo=FALSE, include=FALSE, warning=FALSE}
+# read in IPRscan results for 1 protein
+# infile_ipr <- paste0(system.file(package="iprscanr"),
+#                      "/extdata/ex-out-CAA75348.tsv")
 
+# read in IPRscan results for 42 proteins
 infile_ipr <- paste0(system.file(package="iprscanr"),
-                     "/extdata/ex-out-CAA75348.tsv")
-ipr_combnd <- read_tsv(infile_ipr, col_names=F)
+                     "/extdata/ex-42-out/joined.tsv")
+
+ipr_combnd <- read_tsv(infile_ipr, col_names=T)
 
 ipr_colnames <- c("AccNum", "SeqMD5Digest", "SLength", "Analysis",
                   "DB.ID", "SignDesc", "StartLoc", "StopLoc", "Score",
                   "Status", "RunDate", "IPRAcc", "IPRDesc")
 colnames(ipr_combnd) <- ipr_colnames
 
-ipr_combnd <- ipr_combnd %>%
+ipr_combnd <- ipr_combnd |>
   select(AccNum, Analysis, DB.ID, SignDesc,
          StartLoc, StopLoc, SLength,
-         IPRAcc, IPRDesc) %>%
+         IPRAcc, IPRDesc) |>
   arrange(AccNum, StartLoc)
+
+ipr_combnd$AccNum <- ipr_combnd$AccNum |>
+  str_replace(pattern = ".1_.*", replacement = "")
 ```
 
 ## w/ knitr
@@ -59,31 +74,36 @@ paged_table(ipr_combnd)
 ```
 
 ## w/ kableExtra 
-```{r kableExtra, eval=TRUE, echo=FALSE, warning=FALSE}
+```{r kableExtra, eval=TRUE, echo=T, warning=FALSE}
 
-ipr_combnd %>% head %>%
-  kable(caption = "Table 1. Annotate with kableExtra") %>%
+ipr_combnd %>%
+  head |>
+  kable(caption = "Table 1. Annotate with kableExtra") |>
   kable_styling(c("striped", "hover", "condensed"), full_width = F,
-                position = "left") %>%
-  add_header_above(c("protein"=1, "domains" = 8)) %>%
-  column_spec(1, bold = T) %>%
+                position = "left") |>
+  add_header_above(c("protein"=1, "domains" = 8)) |>
+  column_spec(1, bold = T) |>
   row_spec(0, italic = T)
 
 ```
 
+You can search, sort, and query the table interactively.
+
 ## w/ DT, datatable
-```{r datatable, eval=TRUE, echo=FALSE, warning=FALSE}
+```{r datatable, eval=TRUE, echo=T, warning=F}
 ipr_combnd |>
   head() |> 
   datatable(fillContainer=FALSE,
             options=list(pageLength=8))
 ```
 ### adding extensions
-```{r datatable2, eval=TRUE, echo=FALSE, warning=FALSE}
+You can now show/hide specific columns using the `Column visibility` button.
+
+```{r datatable2, eval=T, echo=T, warning=F}
 
 DT::datatable(ipr_combnd,
               extensions = c('Buttons', 'FixedColumns',
-                             'RowReorder', 'Responsive'),
+                             'RowReorder', 'RowGroup'),
               options = list(
                 pageLength = 5,
                 dom = 'Bfrtip',
@@ -93,6 +113,7 @@ DT::datatable(ipr_combnd,
                 fixedHeader = TRUE,
                 rowReorder = TRUE, order = list(c(0, 'asc')),
                 scrollX = TRUE,
+                rowGroup = list(dataSrc = 1),
                 lengthMenu = c(10, 25, 100)
               ))
 
