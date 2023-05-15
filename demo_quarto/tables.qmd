@@ -37,11 +37,11 @@ library(gt)
 
 ```{r load_data, eval=T, echo=T, warning=F, include=F}
 
-# read in IPRscan results for 1 protein
+# Read in IPRscan results for 1 protein
 # infile_ipr <- paste0(system.file(package="iprscanr"),
 #                      "/extdata/ex-out-CAA75348.tsv")
 
-# read in IPRscan results for 42 proteins
+# Read in IPRscan results for 42 proteins
 infile_ipr <- paste0(system.file(package="iprscanr"),
                      "/extdata/ex-42-out/joined.tsv")
 

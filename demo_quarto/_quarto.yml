@@ -10,6 +10,8 @@ website:
         text: Home
       - href: tables.qmd
         text: Tables
+      - href: figures.qmd
+        text: Figures
 
 
 format:

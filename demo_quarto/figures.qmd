@@ -1,0 +1,133 @@
+---
+title: "Figures"
+---
+
+
+# Let's look at some figures!
+
+```{r install2, eval=F, echo=F, include=F, warning=F}
+# install.packages(c("tidyverse", "here"))
+# install.packages("devtools")
+# our package
+devtools::install_github("jravilab/iprscanr", dependencies = T, force = T)
+# some table packages
+install.packages(c("ggplot2", "plotly", "gganimate"), dependencies = T)
+devtools::install_github("lchiffon/wordcloud2")
+# try out shiny/flex dashboard
+# install.packages(c("shiny", "shinydashboard", "flexdashboard"),
+# dependencies = T)
+```
+
+```{r load_libs2, eval=T, echo=T, warning=F, include=FALSE}
+library(tidyverse)
+library(here)
+library(fontawesome)
+# our data package
+library(iprscanr)
+library(plotly)
+library(gganimate)
+library(wordcloud2)
+# to try shiny/flex dashboard
+# library(shiny); library(shinydashboard); library(flexdashboard)
+```
+
+## Explore your IPR results here
+
+```{r load_data2, eval=T, echo=T, warning=F, include=F}
+
+## read in IPRscan results for 1 protein
+# infile_ipr <- paste0(system.file(package="iprscanr"),
+#                      "/extdata/ex-out-CAA75348.tsv")
+
+## Read in IPRscan results for 42 proteins
+infile_ipr <- paste0(system.file(package="iprscanr"),
+                     "/extdata/ex-42-out/joined.tsv")
+
+ipr_combnd <- read_tsv(infile_ipr, col_names=T)
+
+ipr_colnames <- c("AccNum", "SeqMD5Digest", "SLength", "Analysis",
+                  "DB.ID", "SignDesc", "StartLoc", "StopLoc", "Score",
+                  "Status", "RunDate", "IPRAcc", "IPRDesc")
+colnames(ipr_combnd) <- ipr_colnames
+
+ipr_combnd <- ipr_combnd |>
+  select(AccNum, Analysis, DB.ID, SignDesc,
+         StartLoc, StopLoc, SLength,
+         IPRAcc, IPRDesc) |>
+  arrange(AccNum, StartLoc)
+
+ipr_combnd$AccNum <- ipr_combnd$AccNum |>
+  str_replace(pattern = ".1_.*", replacement = "")
+
+## Loading the log file
+infile_iprlog <- paste0(system.file(package="iprscanr"),
+                     "/extdata/ex-42-out/api.log")
+
+ipr_log <- read_tsv(infile_ipr, col_names=T)
+```
+
+## Runtime histogram
+```{r hist, warning=F, message=FALSE}
+hist_plot <- job_time_hist(ipr_log_path = infile_iprlog)
+hist_plot
+
+```
+
+
+## Domain stats
+```{r doms, warning=FALSE, message=FALSE}
+ipr_summ <- ipr_combnd |> 
+  group_by(AccNum, Analysis) |> 
+  summarize(TotalDoms=n())
+
+# static plot
+ps <- ipr_summ |> 
+  ggplot(aes(y = TotalDoms)) +
+  geom_histogram(stat="bin")
+
+# plotly
+ggplotly(ps)
+
+```
+## gganimate | domains-per-protein
+```{r gganimate, warning=FALSE, message=FALSE}
+ipr_summ2 <- ipr_combnd |> 
+  group_by(AccNum, DB.ID) |> 
+  summarise(TotDoms=n())
+
+ipr_summ2 |> 
+  ggplot(aes(y=DB.ID, x=TotDoms, fill=DB.ID)) +
+  geom_bar(stat="identity") +
+  theme_minimal() +
+  transition_states(AccNum, transition_length=2, state_length=1) +
+  ease_aes('linear')
+
+```
+
+## heatmap
+```{r heatmap}
+ipr_summ2 |> 
+  ggplot(aes(x=AccNum, y=DB.ID, fill=TotDoms)) +
+  geom_tile() + theme_minimal() +
+  scale_fill_viridis_b() +
+  theme(axis.text.x = element_text(angle = 90, hjust=1))
+## plotly
+# ipr_wide <- ipr_summ2 |> 
+#   pivot_wider(names_from = DB.ID, values_from = TotDoms) |> 
+#   column_to_rownames(var = "AccNum")
+# ipr_wide[is.na(ipr_wide)] <- 0
+# 
+# plot_ly(x = colnames(ipr_wide),
+#         y = rownames(ipr_wide),
+#         z=ipr_wide,
+#         type = "heatmap")
+```
+
+## Wordcloud
+```{r wc, warning=FALSE, message=FALSE}
+ipr_combnd |>
+  filter(Analysis=="Pfam") |> 
+  group_by(DB.ID) |> 
+  summarize(freq=n()) |> select(word=DB.ID, freq) |> 
+  wordcloud2()
+```
