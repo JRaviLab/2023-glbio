@@ -200,6 +200,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <ul class="collapse">
   <li><a href="#adding-extensions" id="toc-adding-extensions" class="nav-link" data-scroll-target="#adding-extensions">adding extensions</a></li>
   </ul></li>
+  <li><a href="#w-gt" id="toc-w-gt" class="nav-link" data-scroll-target="#w-gt">w/ gt</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -339,8 +340,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="w-kableextra" class="level2">
 <h2 class="anchored" data-anchor-id="w-kableextra">w/ kableExtra</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>ipr_combnd <span class="sc">%&gt;%</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  head <span class="sc">|&gt;</span></span>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>ipr_combnd <span class="sc">|&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>() <span class="sc">|&gt;</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable</span>(<span class="at">caption =</span> <span class="st">"Table 1. Annotate with kableExtra"</span>) <span class="sc">|&gt;</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="fu">c</span>(<span class="st">"striped"</span>, <span class="st">"hover"</span>, <span class="st">"condensed"</span>), <span class="at">full_width =</span> F,</span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>                <span class="at">position =</span> <span class="st">"left"</span>) <span class="sc">|&gt;</span></span>
@@ -451,8 +452,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">options=</span><span class="fu">list</span>(<span class="at">pageLength=</span><span class="dv">8</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-c2529fb661e80a8787bc" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-c2529fb661e80a8787bc">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["1","2","3","4","5","6"],["YP_008530241","YP_008530243","YP_498609","YP_498609","YP_498609","YP_498610"],["Pfam","Pfam","Pfam","Pfam","Pfam","Pfam"],["PF17259","PF01741","PF11638","PF00338","PF08299","PF00712"],["Family of unknown function (DUF5325)","Large-conductance mechanosensitive channel, MscL","DnaA N-terminal domain","Ribosomal protein S10p/S20e","Bacterial dnaA protein helix-turn-helix","DNA polymerase III beta subunit, N-terminal domain"],[4,1,5,7,361,2],[60,116,64,101,429,128],[63,120,453,102,453,377],["IPR035211","IPR037673","IPR024633","IPR027486","IPR013159","IPR022634"],["Protein of unknown function DUF5325","Large-conductance mechanosensitive channel/anditomin synthesis protein L","DnaA N-terminal domain","Ribosomal protein S10 domain","Chromosomal replication initiator, DnaA C-terminal","DNA polymerase III, beta sliding clamp, N-terminal"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>AccNum<\/th>\n      <th>Analysis<\/th>\n      <th>DB.ID<\/th>\n      <th>SignDesc<\/th>\n      <th>StartLoc<\/th>\n      <th>StopLoc<\/th>\n      <th>SLength<\/th>\n      <th>IPRAcc<\/th>\n      <th>IPRDesc<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":8,"columnDefs":[{"className":"dt-right","targets":[5,6,7]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[8,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-337360f125d3d1d98cd3" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-337360f125d3d1d98cd3">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["1","2","3","4","5","6"],["YP_008530241","YP_008530243","YP_498609","YP_498609","YP_498609","YP_498610"],["Pfam","Pfam","Pfam","Pfam","Pfam","Pfam"],["PF17259","PF01741","PF11638","PF00338","PF08299","PF00712"],["Family of unknown function (DUF5325)","Large-conductance mechanosensitive channel, MscL","DnaA N-terminal domain","Ribosomal protein S10p/S20e","Bacterial dnaA protein helix-turn-helix","DNA polymerase III beta subunit, N-terminal domain"],[4,1,5,7,361,2],[60,116,64,101,429,128],[63,120,453,102,453,377],["IPR035211","IPR037673","IPR024633","IPR027486","IPR013159","IPR022634"],["Protein of unknown function DUF5325","Large-conductance mechanosensitive channel/anditomin synthesis protein L","DnaA N-terminal domain","Ribosomal protein S10 domain","Chromosomal replication initiator, DnaA C-terminal","DNA polymerase III, beta sliding clamp, N-terminal"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>AccNum<\/th>\n      <th>Analysis<\/th>\n      <th>DB.ID<\/th>\n      <th>SignDesc<\/th>\n      <th>StartLoc<\/th>\n      <th>StopLoc<\/th>\n      <th>SLength<\/th>\n      <th>IPRAcc<\/th>\n      <th>IPRDesc<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":8,"columnDefs":[{"className":"dt-right","targets":[5,6,7]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[8,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <section id="adding-extensions" class="level3">
@@ -476,13 +477,1607 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>              ))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-2f07e32f1b901f391a0e" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-2f07e32f1b901f391a0e">{"x":{"filter":"none","vertical":false,"extensions":["Buttons","FixedColumns","RowReorder","RowGroup"],"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56"],["YP_008530241","YP_008530243","YP_498609","YP_498609","YP_498609","YP_498610","YP_498610","YP_498610","YP_498611","YP_498612","YP_498613","YP_498613","YP_498613","YP_498613","YP_498614","YP_498614","YP_498614","YP_498614","YP_498614","YP_498614","YP_498614","YP_498615","YP_498616","YP_498617","YP_498617","YP_498618","YP_498619","YP_498620","YP_498621","YP_498622","YP_498622","YP_498623","YP_498623","YP_498624","YP_498624","YP_498625","YP_498626","YP_498626","YP_498627","YP_498627","YP_498627","YP_498627","YP_498628","YP_498629","YP_498630","YP_498633","YP_498636","YP_498637","YP_498639","YP_498640","YP_498641","YP_498641","YP_498641","YP_498642","YP_498642","YP_498642"],["Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam"],["PF17259","PF01741","PF11638","PF00338","PF08299","PF00712","PF00308","PF02767","PF02768","PF13275","PF02463","PF00204","PF01751","PF00986","PF00521","PF02518","PF03989","PF03989","PF03989","PF03989","PF03989","PF03989","PF01256","PF00221","PF00587","PF02403","PF03591","PF05437","PF00561","PF09991","PF01368","PF03948","PF02272","PF01281","PF03796","PF00772","PF00709","PF00072","PF00486","PF13426","PF00512","PF02518","PF00672","PF07435","PF09648","PF00753","PF02590","PF19614","PF01207","PF01925","PF02583","PF01206","PF13686","PF00753","PF00581","PF00581"],["Family of unknown function (DUF5325)","Large-conductance mechanosensitive channel, MscL","DnaA N-terminal domain","Ribosomal protein S10p/S20e","Bacterial dnaA protein helix-turn-helix","DNA polymerase III beta subunit, N-terminal domain","Bacterial dnaA  protein","DNA polymerase III beta subunit, central domain","DNA polymerase III beta subunit, C-terminal domain","S4 domain","RecF/RecN/SMC N terminal domain","DNA gyrase B","Toprim domain","DNA gyrase B subunit, carboxyl terminus","DNA gyrase/topoisomerase IV, subunit A","Histidine kinase-, DNA gyrase B-, and HSP90-like ATPase","DNA gyrase C-terminal domain, beta-propeller","DNA gyrase C-terminal domain, beta-propeller","DNA gyrase C-terminal domain, beta-propeller","DNA gyrase C-terminal domain, beta-propeller","DNA gyrase C-terminal domain, beta-propeller","DNA gyrase C-terminal domain, beta-propeller","Carbohydrate kinase","Aromatic amino acid lyase","tRNA synthetase class II core domain (G, H, P, S and T)","Seryl-tRNA synthetase N-terminal domain","AzlC protein","Branched-chain amino acid transport protein (AzlD)","alpha/beta hydrolase fold","Predicted membrane protein (DUF2232)","DHH family","Ribosomal protein L9, C-terminal domain","DHHA1 domain","Ribosomal protein L9, N-terminal domain","DnaB-like helicase C terminal domain","DnaB-like helicase N terminal domain","Adenylosuccinate synthetase","Response regulator receiver domain","Transcriptional regulatory protein, C terminal","PAS domain","His Kinase A (phospho-acceptor) domain","Histidine kinase-, DNA gyrase B-, and HSP90-like ATPase","HAMP domain","YycH protein","YycI protein","Metallo-beta-lactamase superfamily","Predicted SPOUT methyltransferase","Family of unknown function (DUF6119)","Dihydrouridine synthase (Dus)","Sulfite exporter TauE/SafE","Metal-sensitive transcriptional repressor","Sulfurtransferase TusA","DsrE/DsrF/DrsH-like family","Metallo-beta-lactamase superfamily","Rhodanese-like domain","Rhodanese-like domain"],[4,1,5,7,361,2,117,137,254,14,3,232,430,574,33,40,507,614,661,713,764,556,1,10,223,1,16,8,38,20,337,65,516,1,185,10,5,5,153,274,376,487,201,1,38,14,1,29,11,10,4,120,201,13,15,359],[60,116,64,101,429,128,332,251,375,64,347,401,541,634,473,180,550,658,706,754,810,605,225,470,400,107,156,106,302,298,494,148,645,49,457,110,420,114,229,368,441,598,252,424,253,220,158,479,137,247,83,188,354,168,98,439],[63,120,453,102,453,377,453,377,377,81,370,644,644,644,887,644,887,887,887,887,887,887,233,504,428,428,231,109,322,312,655,150,655,150,466,466,427,233,233,608,608,608,608,427,262,266,159,581,150,251,86,355,355,444,355,444],["IPR035211","IPR037673","IPR024633","IPR027486","IPR013159","IPR022634","IPR013317","IPR022637","IPR022635","-","IPR003395","IPR013506","IPR006171","IPR002288","IPR002205","IPR003594","IPR006691","IPR006691","IPR006691","IPR006691","IPR006691","IPR006691","IPR000631","IPR001106","IPR002314","IPR015866","IPR011606","IPR008407","IPR000073","IPR018710","IPR001667","IPR020069","IPR003156","IPR020070","IPR007694","IPR007693","IPR001114","IPR001789","IPR001867","IPR000014","IPR003661","IPR003594","IPR003660","IPR009996","IPR018604","IPR001279","IPR003742","IPR026487","IPR035587","IPR002781","IPR003735","IPR001455","IPR032836","IPR001279","IPR001763","IPR001763"],["Protein of unknown function DUF5325","Large-conductance mechanosensitive channel/anditomin synthesis protein L","DnaA N-terminal domain","Ribosomal protein S10 domain","Chromosomal replication initiator, DnaA C-terminal","DNA polymerase III, beta sliding clamp, N-terminal","Chromosomal replication initiator protein DnaA","DNA polymerase III, beta sliding clamp, central","DNA polymerase III, beta sliding clamp, C-terminal","-","RecF/RecN/SMC, N-terminal","DNA topoisomerase, type IIA, subunit B, domain 2","TOPRIM domain","DNA gyrase B subunit, C-terminal","DNA topoisomerase, type IIA, domain A","Histidine kinase/HSP90-like ATPase","DNA gyrase/topoisomerase IV, subunit A, C-terminal repeat","DNA gyrase/topoisomerase IV, subunit A, C-terminal repeat","DNA gyrase/topoisomerase IV, subunit A, C-terminal repeat","DNA gyrase/topoisomerase IV, subunit A, C-terminal repeat","DNA gyrase/topoisomerase IV, subunit A, C-terminal repeat","DNA gyrase/topoisomerase IV, subunit A, C-terminal repeat","ATP/ADP-dependent (S)-NAD(P)H-hydrate dehydratase","Aromatic amino acid lyase","Aminoacyl-tRNA synthetase, class II (G/ P/ S/T)","Serine-tRNA synthetase, type1, N-terminal","Branched-chain amino acid transport, permease","Branched-chain amino acid transport, AzlD","Alpha/beta hydrolase fold-1","Protein of unknown function DUF2232","DDH domain","Ribosomal protein L9, C-terminal","DHHA1 domain","Ribosomal protein L9, N-terminal","DNA helicase, DnaB-like, C-terminal","DNA helicase, DnaB-like, N-terminal","Adenylosuccinate synthetase","Signal transduction response regulator, receiver domain","OmpR/PhoB-type DNA-binding domain","PAS domain","Signal transduction histidine kinase, dimerisation/phosphoacceptor domain","Histidine kinase/HSP90-like ATPase","HAMP domain","Regulatory protein YycH","Regulatory protein YycH-like","Metallo-beta-lactamase","RNA methyltransferase RlmH","Sporadically distributed protein CHP04141","DUS-like, FMN-binding domain","Transmembrane protein TauE-like","Metal-sensitive transcriptional repressor","TusA-like domain","DsrE2-like family","Metallo-beta-lactamase","Rhodanese-like domain","Rhodanese-like domain"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>AccNum<\/th>\n      <th>Analysis<\/th>\n      <th>DB.ID<\/th>\n      <th>SignDesc<\/th>\n      <th>StartLoc<\/th>\n      <th>StopLoc<\/th>\n      <th>SLength<\/th>\n      <th>IPRAcc<\/th>\n      <th>IPRDesc<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"dom":"Bfrtip","buttons":["colvis"],"fixedColumns":{"leftColumns":2},"fixedHeader":true,"rowReorder":true,"order":[["0","asc"]],"scrollX":true,"rowGroup":{"dataSrc":1},"lengthMenu":[10,25,100],"columnDefs":[{"className":"dt-right","targets":[5,6,7]},{"orderable":false,"targets":0}],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-cbec2412cd6355775c4e" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-cbec2412cd6355775c4e">{"x":{"filter":"none","vertical":false,"extensions":["Buttons","FixedColumns","RowReorder","RowGroup"],"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56"],["YP_008530241","YP_008530243","YP_498609","YP_498609","YP_498609","YP_498610","YP_498610","YP_498610","YP_498611","YP_498612","YP_498613","YP_498613","YP_498613","YP_498613","YP_498614","YP_498614","YP_498614","YP_498614","YP_498614","YP_498614","YP_498614","YP_498615","YP_498616","YP_498617","YP_498617","YP_498618","YP_498619","YP_498620","YP_498621","YP_498622","YP_498622","YP_498623","YP_498623","YP_498624","YP_498624","YP_498625","YP_498626","YP_498626","YP_498627","YP_498627","YP_498627","YP_498627","YP_498628","YP_498629","YP_498630","YP_498633","YP_498636","YP_498637","YP_498639","YP_498640","YP_498641","YP_498641","YP_498641","YP_498642","YP_498642","YP_498642"],["Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam","Pfam"],["PF17259","PF01741","PF11638","PF00338","PF08299","PF00712","PF00308","PF02767","PF02768","PF13275","PF02463","PF00204","PF01751","PF00986","PF00521","PF02518","PF03989","PF03989","PF03989","PF03989","PF03989","PF03989","PF01256","PF00221","PF00587","PF02403","PF03591","PF05437","PF00561","PF09991","PF01368","PF03948","PF02272","PF01281","PF03796","PF00772","PF00709","PF00072","PF00486","PF13426","PF00512","PF02518","PF00672","PF07435","PF09648","PF00753","PF02590","PF19614","PF01207","PF01925","PF02583","PF01206","PF13686","PF00753","PF00581","PF00581"],["Family of unknown function (DUF5325)","Large-conductance mechanosensitive channel, MscL","DnaA N-terminal domain","Ribosomal protein S10p/S20e","Bacterial dnaA protein helix-turn-helix","DNA polymerase III beta subunit, N-terminal domain","Bacterial dnaA  protein","DNA polymerase III beta subunit, central domain","DNA polymerase III beta subunit, C-terminal domain","S4 domain","RecF/RecN/SMC N terminal domain","DNA gyrase B","Toprim domain","DNA gyrase B subunit, carboxyl terminus","DNA gyrase/topoisomerase IV, subunit A","Histidine kinase-, DNA gyrase B-, and HSP90-like ATPase","DNA gyrase C-terminal domain, beta-propeller","DNA gyrase C-terminal domain, beta-propeller","DNA gyrase C-terminal domain, beta-propeller","DNA gyrase C-terminal domain, beta-propeller","DNA gyrase C-terminal domain, beta-propeller","DNA gyrase C-terminal domain, beta-propeller","Carbohydrate kinase","Aromatic amino acid lyase","tRNA synthetase class II core domain (G, H, P, S and T)","Seryl-tRNA synthetase N-terminal domain","AzlC protein","Branched-chain amino acid transport protein (AzlD)","alpha/beta hydrolase fold","Predicted membrane protein (DUF2232)","DHH family","Ribosomal protein L9, C-terminal domain","DHHA1 domain","Ribosomal protein L9, N-terminal domain","DnaB-like helicase C terminal domain","DnaB-like helicase N terminal domain","Adenylosuccinate synthetase","Response regulator receiver domain","Transcriptional regulatory protein, C terminal","PAS domain","His Kinase A (phospho-acceptor) domain","Histidine kinase-, DNA gyrase B-, and HSP90-like ATPase","HAMP domain","YycH protein","YycI protein","Metallo-beta-lactamase superfamily","Predicted SPOUT methyltransferase","Family of unknown function (DUF6119)","Dihydrouridine synthase (Dus)","Sulfite exporter TauE/SafE","Metal-sensitive transcriptional repressor","Sulfurtransferase TusA","DsrE/DsrF/DrsH-like family","Metallo-beta-lactamase superfamily","Rhodanese-like domain","Rhodanese-like domain"],[4,1,5,7,361,2,117,137,254,14,3,232,430,574,33,40,507,614,661,713,764,556,1,10,223,1,16,8,38,20,337,65,516,1,185,10,5,5,153,274,376,487,201,1,38,14,1,29,11,10,4,120,201,13,15,359],[60,116,64,101,429,128,332,251,375,64,347,401,541,634,473,180,550,658,706,754,810,605,225,470,400,107,156,106,302,298,494,148,645,49,457,110,420,114,229,368,441,598,252,424,253,220,158,479,137,247,83,188,354,168,98,439],[63,120,453,102,453,377,453,377,377,81,370,644,644,644,887,644,887,887,887,887,887,887,233,504,428,428,231,109,322,312,655,150,655,150,466,466,427,233,233,608,608,608,608,427,262,266,159,581,150,251,86,355,355,444,355,444],["IPR035211","IPR037673","IPR024633","IPR027486","IPR013159","IPR022634","IPR013317","IPR022637","IPR022635","-","IPR003395","IPR013506","IPR006171","IPR002288","IPR002205","IPR003594","IPR006691","IPR006691","IPR006691","IPR006691","IPR006691","IPR006691","IPR000631","IPR001106","IPR002314","IPR015866","IPR011606","IPR008407","IPR000073","IPR018710","IPR001667","IPR020069","IPR003156","IPR020070","IPR007694","IPR007693","IPR001114","IPR001789","IPR001867","IPR000014","IPR003661","IPR003594","IPR003660","IPR009996","IPR018604","IPR001279","IPR003742","IPR026487","IPR035587","IPR002781","IPR003735","IPR001455","IPR032836","IPR001279","IPR001763","IPR001763"],["Protein of unknown function DUF5325","Large-conductance mechanosensitive channel/anditomin synthesis protein L","DnaA N-terminal domain","Ribosomal protein S10 domain","Chromosomal replication initiator, DnaA C-terminal","DNA polymerase III, beta sliding clamp, N-terminal","Chromosomal replication initiator protein DnaA","DNA polymerase III, beta sliding clamp, central","DNA polymerase III, beta sliding clamp, C-terminal","-","RecF/RecN/SMC, N-terminal","DNA topoisomerase, type IIA, subunit B, domain 2","TOPRIM domain","DNA gyrase B subunit, C-terminal","DNA topoisomerase, type IIA, domain A","Histidine kinase/HSP90-like ATPase","DNA gyrase/topoisomerase IV, subunit A, C-terminal repeat","DNA gyrase/topoisomerase IV, subunit A, C-terminal repeat","DNA gyrase/topoisomerase IV, subunit A, C-terminal repeat","DNA gyrase/topoisomerase IV, subunit A, C-terminal repeat","DNA gyrase/topoisomerase IV, subunit A, C-terminal repeat","DNA gyrase/topoisomerase IV, subunit A, C-terminal repeat","ATP/ADP-dependent (S)-NAD(P)H-hydrate dehydratase","Aromatic amino acid lyase","Aminoacyl-tRNA synthetase, class II (G/ P/ S/T)","Serine-tRNA synthetase, type1, N-terminal","Branched-chain amino acid transport, permease","Branched-chain amino acid transport, AzlD","Alpha/beta hydrolase fold-1","Protein of unknown function DUF2232","DDH domain","Ribosomal protein L9, C-terminal","DHHA1 domain","Ribosomal protein L9, N-terminal","DNA helicase, DnaB-like, C-terminal","DNA helicase, DnaB-like, N-terminal","Adenylosuccinate synthetase","Signal transduction response regulator, receiver domain","OmpR/PhoB-type DNA-binding domain","PAS domain","Signal transduction histidine kinase, dimerisation/phosphoacceptor domain","Histidine kinase/HSP90-like ATPase","HAMP domain","Regulatory protein YycH","Regulatory protein YycH-like","Metallo-beta-lactamase","RNA methyltransferase RlmH","Sporadically distributed protein CHP04141","DUS-like, FMN-binding domain","Transmembrane protein TauE-like","Metal-sensitive transcriptional repressor","TusA-like domain","DsrE2-like family","Metallo-beta-lactamase","Rhodanese-like domain","Rhodanese-like domain"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>AccNum<\/th>\n      <th>Analysis<\/th>\n      <th>DB.ID<\/th>\n      <th>SignDesc<\/th>\n      <th>StartLoc<\/th>\n      <th>StopLoc<\/th>\n      <th>SLength<\/th>\n      <th>IPRAcc<\/th>\n      <th>IPRDesc<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"dom":"Bfrtip","buttons":["colvis"],"fixedColumns":{"leftColumns":2},"fixedHeader":true,"rowReorder":true,"order":[["0","asc"]],"scrollX":true,"rowGroup":{"dataSrc":1},"lengthMenu":[10,25,100],"columnDefs":[{"className":"dt-right","targets":[5,6,7]},{"orderable":false,"targets":0}],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
-
-
 </section>
+</section>
+<section id="w-gt" class="level2">
+<h2 class="anchored" data-anchor-id="w-gt">w/ gt</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>ipr_combnd <span class="sc">|&gt;</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div id="cvicequeee" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#cvicequeee table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#cvicequeee thead, #cvicequeee tbody, #cvicequeee tfoot, #cvicequeee tr, #cvicequeee td, #cvicequeee th {
+  border-style: none;
+}
+
+#cvicequeee p {
+  margin: 0;
+  padding: 0;
+}
+
+#cvicequeee .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#cvicequeee .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#cvicequeee .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#cvicequeee .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#cvicequeee .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#cvicequeee .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cvicequeee .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#cvicequeee .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#cvicequeee .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#cvicequeee .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#cvicequeee .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#cvicequeee .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#cvicequeee .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#cvicequeee .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#cvicequeee .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#cvicequeee .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#cvicequeee .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#cvicequeee .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#cvicequeee .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cvicequeee .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#cvicequeee .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#cvicequeee .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#cvicequeee .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cvicequeee .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#cvicequeee .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#cvicequeee .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cvicequeee .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cvicequeee .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#cvicequeee .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cvicequeee .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#cvicequeee .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cvicequeee .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#cvicequeee .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cvicequeee .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#cvicequeee .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cvicequeee .gt_left {
+  text-align: left;
+}
+
+#cvicequeee .gt_center {
+  text-align: center;
+}
+
+#cvicequeee .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#cvicequeee .gt_font_normal {
+  font-weight: normal;
+}
+
+#cvicequeee .gt_font_bold {
+  font-weight: bold;
+}
+
+#cvicequeee .gt_font_italic {
+  font-style: italic;
+}
+
+#cvicequeee .gt_super {
+  font-size: 65%;
+}
+
+#cvicequeee .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#cvicequeee .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#cvicequeee .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#cvicequeee .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#cvicequeee .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#cvicequeee .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#cvicequeee .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <thead>
+    
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="AccNum">AccNum</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="Analysis">Analysis</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="DB.ID">DB.ID</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="SignDesc">SignDesc</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="StartLoc">StartLoc</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="StopLoc">StopLoc</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="SLength">SLength</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="IPRAcc">IPRAcc</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="IPRDesc">IPRDesc</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="AccNum" class="gt_row gt_left">YP_008530241</td>
+<td headers="Analysis" class="gt_row gt_left">Pfam</td>
+<td headers="DB.ID" class="gt_row gt_left">PF17259</td>
+<td headers="SignDesc" class="gt_row gt_left">Family of unknown function (DUF5325)</td>
+<td headers="StartLoc" class="gt_row gt_right">4</td>
+<td headers="StopLoc" class="gt_row gt_right">60</td>
+<td headers="SLength" class="gt_row gt_right">63</td>
+<td headers="IPRAcc" class="gt_row gt_left">IPR035211</td>
+<td headers="IPRDesc" class="gt_row gt_left">Protein of unknown function DUF5325</td></tr>
+    <tr><td headers="AccNum" class="gt_row gt_left">YP_008530243</td>
+<td headers="Analysis" class="gt_row gt_left">Pfam</td>
+<td headers="DB.ID" class="gt_row gt_left">PF01741</td>
+<td headers="SignDesc" class="gt_row gt_left">Large-conductance mechanosensitive channel, MscL</td>
+<td headers="StartLoc" class="gt_row gt_right">1</td>
+<td headers="StopLoc" class="gt_row gt_right">116</td>
+<td headers="SLength" class="gt_row gt_right">120</td>
+<td headers="IPRAcc" class="gt_row gt_left">IPR037673</td>
+<td headers="IPRDesc" class="gt_row gt_left">Large-conductance mechanosensitive channel/anditomin synthesis protein L</td></tr>
+    <tr><td headers="AccNum" class="gt_row gt_left">YP_498609</td>
+<td headers="Analysis" class="gt_row gt_left">Pfam</td>
+<td headers="DB.ID" class="gt_row gt_left">PF11638</td>
+<td headers="SignDesc" class="gt_row gt_left">DnaA N-terminal domain</td>
+<td headers="StartLoc" class="gt_row gt_right">5</td>
+<td headers="StopLoc" class="gt_row gt_right">64</td>
+<td headers="SLength" class="gt_row gt_right">453</td>
+<td headers="IPRAcc" class="gt_row gt_left">IPR024633</td>
+<td headers="IPRDesc" class="gt_row gt_left">DnaA N-terminal domain</td></tr>
+    <tr><td headers="AccNum" class="gt_row gt_left">YP_498609</td>
+<td headers="Analysis" class="gt_row gt_left">Pfam</td>
+<td headers="DB.ID" class="gt_row gt_left">PF00338</td>
+<td headers="SignDesc" class="gt_row gt_left">Ribosomal protein S10p/S20e</td>
+<td headers="StartLoc" class="gt_row gt_right">7</td>
+<td headers="StopLoc" class="gt_row gt_right">101</td>
+<td headers="SLength" class="gt_row gt_right">102</td>
+<td headers="IPRAcc" class="gt_row gt_left">IPR027486</td>
+<td headers="IPRDesc" class="gt_row gt_left">Ribosomal protein S10 domain</td></tr>
+    <tr><td headers="AccNum" class="gt_row gt_left">YP_498609</td>
+<td headers="Analysis" class="gt_row gt_left">Pfam</td>
+<td headers="DB.ID" class="gt_row gt_left">PF08299</td>
+<td headers="SignDesc" class="gt_row gt_left">Bacterial dnaA protein helix-turn-helix</td>
+<td headers="StartLoc" class="gt_row gt_right">361</td>
+<td headers="StopLoc" class="gt_row gt_right">429</td>
+<td headers="SLength" class="gt_row gt_right">453</td>
+<td headers="IPRAcc" class="gt_row gt_left">IPR013159</td>
+<td headers="IPRDesc" class="gt_row gt_left">Chromosomal replication initiator, DnaA C-terminal</td></tr>
+    <tr><td headers="AccNum" class="gt_row gt_left">YP_498610</td>
+<td headers="Analysis" class="gt_row gt_left">Pfam</td>
+<td headers="DB.ID" class="gt_row gt_left">PF00712</td>
+<td headers="SignDesc" class="gt_row gt_left">DNA polymerase III beta subunit, N-terminal domain</td>
+<td headers="StartLoc" class="gt_row gt_right">2</td>
+<td headers="StopLoc" class="gt_row gt_right">128</td>
+<td headers="SLength" class="gt_row gt_right">377</td>
+<td headers="IPRAcc" class="gt_row gt_left">IPR022634</td>
+<td headers="IPRDesc" class="gt_row gt_left">DNA polymerase III, beta sliding clamp, N-terminal</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>ipr_gt <span class="ot">&lt;-</span> ipr_combnd <span class="sc">|&gt;</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(AccNum) <span class="sc">|&gt;</span> </span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_header</span>(<span class="at">title=</span><span class="fu">md</span>(<span class="st">"IPRScan Results"</span>), <span class="at">subtitle=</span><span class="st">"using GT"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_source_note</span>(<span class="fu">md</span>(<span class="st">"More information on the [GT package](https://gt.rstudio.com/index.html)."</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cols_align</span>(<span class="at">align=</span><span class="st">"right"</span>, <span class="at">columns=</span><span class="cn">TRUE</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_spanner</span>(<span class="at">label=</span><span class="st">"Protein"</span>, <span class="at">columns=</span><span class="fu">matches</span>(<span class="st">"AccNum"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_spanner</span>(<span class="at">label=</span><span class="st">"Domains"</span>, <span class="at">columns=</span><span class="fu">matches</span>(<span class="st">"Analysis|DB.ID|SignDesc"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_spanner</span>(<span class="at">label=</span><span class="st">"DomLoc"</span>, <span class="at">columns=</span><span class="fu">matches</span>(<span class="st">"Loc|Length"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_spanner</span>(<span class="at">label=</span><span class="st">"IPR"</span>, <span class="at">columns=</span><span class="fu">matches</span>(<span class="st">"IPR"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_options</span>(</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Headings; Titles</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>        <span class="at">heading.background.color=</span><span class="st">"#3C5488"</span>,</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>        <span class="at">heading.border.bottom.color=</span><span class="st">"#989898"</span>,</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">heading.title.font.size=</span><span class="st">"12px"</span>,</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>        <span class="at">heading.subtitle.font.size=</span><span class="st">"11px"</span>,</span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Column labels</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>        <span class="at">column_labels.background.color=</span><span class="st">"#4DBBD5"</span>, <span class="co">#B09C85FF</span></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>        <span class="at">column_labels.font.size=</span><span class="st">"12px"</span>,</span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Stubs</span></span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>        <span class="at">stub.background.color=</span><span class="st">"#4DBBD5"</span>, <span class="co">#B09C85FF</span></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>        <span class="at">stub.border.style=</span><span class="st">"dashed"</span>,</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>        <span class="at">stub.border.color=</span><span class="st">"#989898"</span>,</span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>        <span class="at">stub.border.width=</span><span class="st">"1px"</span>,</span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Row groups</span></span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>        <span class="at">row_group.background.color=</span><span class="st">"coral3"</span>, <span class="co">#FFEFDB80</span></span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>        <span class="at">row_group.border.top.color=</span><span class="st">"#989898"</span>,</span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>        <span class="at">row_group.border.bottom.style=</span><span class="st">"none"</span>,</span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>        <span class="at">row_group.font.size=</span><span class="st">"12px"</span>,</span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Summary rows</span></span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>        <span class="at">summary_row.border.color=</span><span class="st">"#989898"</span>,</span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>        <span class="co"># summary_row.background.color="#FFEBEE",</span></span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>        <span class="co"># grand_summary_row.background.color="#FFFFFF",</span></span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Table</span></span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>        <span class="at">table.font.color=</span><span class="st">"#323232"</span>,</span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>        <span class="at">table_body.hlines.color=</span><span class="st">"#989898"</span>,</span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a>        <span class="at">table_body.border.top.color=</span><span class="st">"#989898"</span>,</span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>        <span class="at">table.font.size=</span><span class="st">"10px"</span>,</span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>        <span class="at">table.width=</span><span class="st">"80%"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Since gt v0.3.0, `columns = TRUE` has been deprecated.
+• Please use `columns = everything()` instead.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>ipr_gt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div id="jvtdyelbft" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jvtdyelbft table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#jvtdyelbft thead, #jvtdyelbft tbody, #jvtdyelbft tfoot, #jvtdyelbft tr, #jvtdyelbft td, #jvtdyelbft th {
+  border-style: none;
+}
+
+#jvtdyelbft p {
+  margin: 0;
+  padding: 0;
+}
+
+#jvtdyelbft .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #323232;
+  font-size: 10px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: 80%;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#jvtdyelbft .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#jvtdyelbft .gt_title {
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#jvtdyelbft .gt_subtitle {
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#jvtdyelbft .gt_heading {
+  background-color: #3C5488;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#jvtdyelbft .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #989898;
+}
+
+#jvtdyelbft .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#jvtdyelbft .gt_col_heading {
+  color: #FFFFFF;
+  background-color: #4DBBD5;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#jvtdyelbft .gt_column_spanner_outer {
+  color: #FFFFFF;
+  background-color: #4DBBD5;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#jvtdyelbft .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#jvtdyelbft .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#jvtdyelbft .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#jvtdyelbft .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#jvtdyelbft .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #FFFFFF;
+  background-color: #CD5B45;
+  font-size: 12px;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #989898;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#jvtdyelbft .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #FFFFFF;
+  background-color: #CD5B45;
+  font-size: 12px;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #989898;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#jvtdyelbft .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#jvtdyelbft .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#jvtdyelbft .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #989898;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#jvtdyelbft .gt_stub {
+  color: #FFFFFF;
+  background-color: #4DBBD5;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: dashed;
+  border-right-width: 1px;
+  border-right-color: #989898;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#jvtdyelbft .gt_stub_row_group {
+  color: #323232;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#jvtdyelbft .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#jvtdyelbft .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#jvtdyelbft .gt_summary_row {
+  color: #323232;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#jvtdyelbft .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #989898;
+}
+
+#jvtdyelbft .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#jvtdyelbft .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #989898;
+}
+
+#jvtdyelbft .gt_grand_summary_row {
+  color: #323232;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#jvtdyelbft .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#jvtdyelbft .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#jvtdyelbft .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#jvtdyelbft .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #989898;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#jvtdyelbft .gt_footnotes {
+  color: #323232;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#jvtdyelbft .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#jvtdyelbft .gt_sourcenotes {
+  color: #323232;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#jvtdyelbft .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#jvtdyelbft .gt_left {
+  text-align: left;
+}
+
+#jvtdyelbft .gt_center {
+  text-align: center;
+}
+
+#jvtdyelbft .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#jvtdyelbft .gt_font_normal {
+  font-weight: normal;
+}
+
+#jvtdyelbft .gt_font_bold {
+  font-weight: bold;
+}
+
+#jvtdyelbft .gt_font_italic {
+  font-style: italic;
+}
+
+#jvtdyelbft .gt_super {
+  font-size: 65%;
+}
+
+#jvtdyelbft .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#jvtdyelbft .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#jvtdyelbft .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#jvtdyelbft .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#jvtdyelbft .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#jvtdyelbft .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#jvtdyelbft .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <thead>
+    <tr class="gt_heading">
+      <td colspan="8" class="gt_heading gt_title gt_font_normal" style="">IPRScan Results</td>
+    </tr>
+    <tr class="gt_heading">
+      <td colspan="8" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style="">using GT</td>
+    </tr>
+    <tr class="gt_col_headings gt_spanner_row">
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="3" scope="colgroup" id="Domains">
+        <span class="gt_column_spanner">Domains</span>
+      </th>
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="3" scope="colgroup" id="DomLoc">
+        <span class="gt_column_spanner">DomLoc</span>
+      </th>
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="2" scope="colgroup" id="IPR">
+        <span class="gt_column_spanner">IPR</span>
+      </th>
+    </tr>
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Analysis">Analysis</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="DB.ID">DB.ID</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="SignDesc">SignDesc</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="StartLoc">StartLoc</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="StopLoc">StopLoc</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="SLength">SLength</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="IPRAcc">IPRAcc</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="IPRDesc">IPRDesc</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_008530241">YP_008530241</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_008530241  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_008530241  DB.ID" class="gt_row gt_right">PF17259</td>
+<td headers="YP_008530241  SignDesc" class="gt_row gt_right">Family of unknown function (DUF5325)</td>
+<td headers="YP_008530241  StartLoc" class="gt_row gt_right">4</td>
+<td headers="YP_008530241  StopLoc" class="gt_row gt_right">60</td>
+<td headers="YP_008530241  SLength" class="gt_row gt_right">63</td>
+<td headers="YP_008530241  IPRAcc" class="gt_row gt_right">IPR035211</td>
+<td headers="YP_008530241  IPRDesc" class="gt_row gt_right">Protein of unknown function DUF5325</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_008530243">YP_008530243</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_008530243  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_008530243  DB.ID" class="gt_row gt_right">PF01741</td>
+<td headers="YP_008530243  SignDesc" class="gt_row gt_right">Large-conductance mechanosensitive channel, MscL</td>
+<td headers="YP_008530243  StartLoc" class="gt_row gt_right">1</td>
+<td headers="YP_008530243  StopLoc" class="gt_row gt_right">116</td>
+<td headers="YP_008530243  SLength" class="gt_row gt_right">120</td>
+<td headers="YP_008530243  IPRAcc" class="gt_row gt_right">IPR037673</td>
+<td headers="YP_008530243  IPRDesc" class="gt_row gt_right">Large-conductance mechanosensitive channel/anditomin synthesis protein L</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498609">YP_498609</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498609  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498609  DB.ID" class="gt_row gt_right">PF11638</td>
+<td headers="YP_498609  SignDesc" class="gt_row gt_right">DnaA N-terminal domain</td>
+<td headers="YP_498609  StartLoc" class="gt_row gt_right">5</td>
+<td headers="YP_498609  StopLoc" class="gt_row gt_right">64</td>
+<td headers="YP_498609  SLength" class="gt_row gt_right">453</td>
+<td headers="YP_498609  IPRAcc" class="gt_row gt_right">IPR024633</td>
+<td headers="YP_498609  IPRDesc" class="gt_row gt_right">DnaA N-terminal domain</td></tr>
+    <tr><td headers="YP_498609  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498609  DB.ID" class="gt_row gt_right">PF00338</td>
+<td headers="YP_498609  SignDesc" class="gt_row gt_right">Ribosomal protein S10p/S20e</td>
+<td headers="YP_498609  StartLoc" class="gt_row gt_right">7</td>
+<td headers="YP_498609  StopLoc" class="gt_row gt_right">101</td>
+<td headers="YP_498609  SLength" class="gt_row gt_right">102</td>
+<td headers="YP_498609  IPRAcc" class="gt_row gt_right">IPR027486</td>
+<td headers="YP_498609  IPRDesc" class="gt_row gt_right">Ribosomal protein S10 domain</td></tr>
+    <tr><td headers="YP_498609  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498609  DB.ID" class="gt_row gt_right">PF08299</td>
+<td headers="YP_498609  SignDesc" class="gt_row gt_right">Bacterial dnaA protein helix-turn-helix</td>
+<td headers="YP_498609  StartLoc" class="gt_row gt_right">361</td>
+<td headers="YP_498609  StopLoc" class="gt_row gt_right">429</td>
+<td headers="YP_498609  SLength" class="gt_row gt_right">453</td>
+<td headers="YP_498609  IPRAcc" class="gt_row gt_right">IPR013159</td>
+<td headers="YP_498609  IPRDesc" class="gt_row gt_right">Chromosomal replication initiator, DnaA C-terminal</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498610">YP_498610</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498610  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498610  DB.ID" class="gt_row gt_right">PF00712</td>
+<td headers="YP_498610  SignDesc" class="gt_row gt_right">DNA polymerase III beta subunit, N-terminal domain</td>
+<td headers="YP_498610  StartLoc" class="gt_row gt_right">2</td>
+<td headers="YP_498610  StopLoc" class="gt_row gt_right">128</td>
+<td headers="YP_498610  SLength" class="gt_row gt_right">377</td>
+<td headers="YP_498610  IPRAcc" class="gt_row gt_right">IPR022634</td>
+<td headers="YP_498610  IPRDesc" class="gt_row gt_right">DNA polymerase III, beta sliding clamp, N-terminal</td></tr>
+    <tr><td headers="YP_498610  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498610  DB.ID" class="gt_row gt_right">PF00308</td>
+<td headers="YP_498610  SignDesc" class="gt_row gt_right">Bacterial dnaA  protein</td>
+<td headers="YP_498610  StartLoc" class="gt_row gt_right">117</td>
+<td headers="YP_498610  StopLoc" class="gt_row gt_right">332</td>
+<td headers="YP_498610  SLength" class="gt_row gt_right">453</td>
+<td headers="YP_498610  IPRAcc" class="gt_row gt_right">IPR013317</td>
+<td headers="YP_498610  IPRDesc" class="gt_row gt_right">Chromosomal replication initiator protein DnaA</td></tr>
+    <tr><td headers="YP_498610  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498610  DB.ID" class="gt_row gt_right">PF02767</td>
+<td headers="YP_498610  SignDesc" class="gt_row gt_right">DNA polymerase III beta subunit, central domain</td>
+<td headers="YP_498610  StartLoc" class="gt_row gt_right">137</td>
+<td headers="YP_498610  StopLoc" class="gt_row gt_right">251</td>
+<td headers="YP_498610  SLength" class="gt_row gt_right">377</td>
+<td headers="YP_498610  IPRAcc" class="gt_row gt_right">IPR022637</td>
+<td headers="YP_498610  IPRDesc" class="gt_row gt_right">DNA polymerase III, beta sliding clamp, central</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498611">YP_498611</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498611  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498611  DB.ID" class="gt_row gt_right">PF02768</td>
+<td headers="YP_498611  SignDesc" class="gt_row gt_right">DNA polymerase III beta subunit, C-terminal domain</td>
+<td headers="YP_498611  StartLoc" class="gt_row gt_right">254</td>
+<td headers="YP_498611  StopLoc" class="gt_row gt_right">375</td>
+<td headers="YP_498611  SLength" class="gt_row gt_right">377</td>
+<td headers="YP_498611  IPRAcc" class="gt_row gt_right">IPR022635</td>
+<td headers="YP_498611  IPRDesc" class="gt_row gt_right">DNA polymerase III, beta sliding clamp, C-terminal</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498612">YP_498612</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498612  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498612  DB.ID" class="gt_row gt_right">PF13275</td>
+<td headers="YP_498612  SignDesc" class="gt_row gt_right">S4 domain</td>
+<td headers="YP_498612  StartLoc" class="gt_row gt_right">14</td>
+<td headers="YP_498612  StopLoc" class="gt_row gt_right">64</td>
+<td headers="YP_498612  SLength" class="gt_row gt_right">81</td>
+<td headers="YP_498612  IPRAcc" class="gt_row gt_right">-</td>
+<td headers="YP_498612  IPRDesc" class="gt_row gt_right">-</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498613">YP_498613</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498613  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498613  DB.ID" class="gt_row gt_right">PF02463</td>
+<td headers="YP_498613  SignDesc" class="gt_row gt_right">RecF/RecN/SMC N terminal domain</td>
+<td headers="YP_498613  StartLoc" class="gt_row gt_right">3</td>
+<td headers="YP_498613  StopLoc" class="gt_row gt_right">347</td>
+<td headers="YP_498613  SLength" class="gt_row gt_right">370</td>
+<td headers="YP_498613  IPRAcc" class="gt_row gt_right">IPR003395</td>
+<td headers="YP_498613  IPRDesc" class="gt_row gt_right">RecF/RecN/SMC, N-terminal</td></tr>
+    <tr><td headers="YP_498613  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498613  DB.ID" class="gt_row gt_right">PF00204</td>
+<td headers="YP_498613  SignDesc" class="gt_row gt_right">DNA gyrase B</td>
+<td headers="YP_498613  StartLoc" class="gt_row gt_right">232</td>
+<td headers="YP_498613  StopLoc" class="gt_row gt_right">401</td>
+<td headers="YP_498613  SLength" class="gt_row gt_right">644</td>
+<td headers="YP_498613  IPRAcc" class="gt_row gt_right">IPR013506</td>
+<td headers="YP_498613  IPRDesc" class="gt_row gt_right">DNA topoisomerase, type IIA, subunit B, domain 2</td></tr>
+    <tr><td headers="YP_498613  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498613  DB.ID" class="gt_row gt_right">PF01751</td>
+<td headers="YP_498613  SignDesc" class="gt_row gt_right">Toprim domain</td>
+<td headers="YP_498613  StartLoc" class="gt_row gt_right">430</td>
+<td headers="YP_498613  StopLoc" class="gt_row gt_right">541</td>
+<td headers="YP_498613  SLength" class="gt_row gt_right">644</td>
+<td headers="YP_498613  IPRAcc" class="gt_row gt_right">IPR006171</td>
+<td headers="YP_498613  IPRDesc" class="gt_row gt_right">TOPRIM domain</td></tr>
+    <tr><td headers="YP_498613  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498613  DB.ID" class="gt_row gt_right">PF00986</td>
+<td headers="YP_498613  SignDesc" class="gt_row gt_right">DNA gyrase B subunit, carboxyl terminus</td>
+<td headers="YP_498613  StartLoc" class="gt_row gt_right">574</td>
+<td headers="YP_498613  StopLoc" class="gt_row gt_right">634</td>
+<td headers="YP_498613  SLength" class="gt_row gt_right">644</td>
+<td headers="YP_498613  IPRAcc" class="gt_row gt_right">IPR002288</td>
+<td headers="YP_498613  IPRDesc" class="gt_row gt_right">DNA gyrase B subunit, C-terminal</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498614">YP_498614</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498614  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498614  DB.ID" class="gt_row gt_right">PF00521</td>
+<td headers="YP_498614  SignDesc" class="gt_row gt_right">DNA gyrase/topoisomerase IV, subunit A</td>
+<td headers="YP_498614  StartLoc" class="gt_row gt_right">33</td>
+<td headers="YP_498614  StopLoc" class="gt_row gt_right">473</td>
+<td headers="YP_498614  SLength" class="gt_row gt_right">887</td>
+<td headers="YP_498614  IPRAcc" class="gt_row gt_right">IPR002205</td>
+<td headers="YP_498614  IPRDesc" class="gt_row gt_right">DNA topoisomerase, type IIA, domain A</td></tr>
+    <tr><td headers="YP_498614  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498614  DB.ID" class="gt_row gt_right">PF02518</td>
+<td headers="YP_498614  SignDesc" class="gt_row gt_right">Histidine kinase-, DNA gyrase B-, and HSP90-like ATPase</td>
+<td headers="YP_498614  StartLoc" class="gt_row gt_right">40</td>
+<td headers="YP_498614  StopLoc" class="gt_row gt_right">180</td>
+<td headers="YP_498614  SLength" class="gt_row gt_right">644</td>
+<td headers="YP_498614  IPRAcc" class="gt_row gt_right">IPR003594</td>
+<td headers="YP_498614  IPRDesc" class="gt_row gt_right">Histidine kinase/HSP90-like ATPase</td></tr>
+    <tr><td headers="YP_498614  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498614  DB.ID" class="gt_row gt_right">PF03989</td>
+<td headers="YP_498614  SignDesc" class="gt_row gt_right">DNA gyrase C-terminal domain, beta-propeller</td>
+<td headers="YP_498614  StartLoc" class="gt_row gt_right">507</td>
+<td headers="YP_498614  StopLoc" class="gt_row gt_right">550</td>
+<td headers="YP_498614  SLength" class="gt_row gt_right">887</td>
+<td headers="YP_498614  IPRAcc" class="gt_row gt_right">IPR006691</td>
+<td headers="YP_498614  IPRDesc" class="gt_row gt_right">DNA gyrase/topoisomerase IV, subunit A, C-terminal repeat</td></tr>
+    <tr><td headers="YP_498614  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498614  DB.ID" class="gt_row gt_right">PF03989</td>
+<td headers="YP_498614  SignDesc" class="gt_row gt_right">DNA gyrase C-terminal domain, beta-propeller</td>
+<td headers="YP_498614  StartLoc" class="gt_row gt_right">614</td>
+<td headers="YP_498614  StopLoc" class="gt_row gt_right">658</td>
+<td headers="YP_498614  SLength" class="gt_row gt_right">887</td>
+<td headers="YP_498614  IPRAcc" class="gt_row gt_right">IPR006691</td>
+<td headers="YP_498614  IPRDesc" class="gt_row gt_right">DNA gyrase/topoisomerase IV, subunit A, C-terminal repeat</td></tr>
+    <tr><td headers="YP_498614  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498614  DB.ID" class="gt_row gt_right">PF03989</td>
+<td headers="YP_498614  SignDesc" class="gt_row gt_right">DNA gyrase C-terminal domain, beta-propeller</td>
+<td headers="YP_498614  StartLoc" class="gt_row gt_right">661</td>
+<td headers="YP_498614  StopLoc" class="gt_row gt_right">706</td>
+<td headers="YP_498614  SLength" class="gt_row gt_right">887</td>
+<td headers="YP_498614  IPRAcc" class="gt_row gt_right">IPR006691</td>
+<td headers="YP_498614  IPRDesc" class="gt_row gt_right">DNA gyrase/topoisomerase IV, subunit A, C-terminal repeat</td></tr>
+    <tr><td headers="YP_498614  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498614  DB.ID" class="gt_row gt_right">PF03989</td>
+<td headers="YP_498614  SignDesc" class="gt_row gt_right">DNA gyrase C-terminal domain, beta-propeller</td>
+<td headers="YP_498614  StartLoc" class="gt_row gt_right">713</td>
+<td headers="YP_498614  StopLoc" class="gt_row gt_right">754</td>
+<td headers="YP_498614  SLength" class="gt_row gt_right">887</td>
+<td headers="YP_498614  IPRAcc" class="gt_row gt_right">IPR006691</td>
+<td headers="YP_498614  IPRDesc" class="gt_row gt_right">DNA gyrase/topoisomerase IV, subunit A, C-terminal repeat</td></tr>
+    <tr><td headers="YP_498614  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498614  DB.ID" class="gt_row gt_right">PF03989</td>
+<td headers="YP_498614  SignDesc" class="gt_row gt_right">DNA gyrase C-terminal domain, beta-propeller</td>
+<td headers="YP_498614  StartLoc" class="gt_row gt_right">764</td>
+<td headers="YP_498614  StopLoc" class="gt_row gt_right">810</td>
+<td headers="YP_498614  SLength" class="gt_row gt_right">887</td>
+<td headers="YP_498614  IPRAcc" class="gt_row gt_right">IPR006691</td>
+<td headers="YP_498614  IPRDesc" class="gt_row gt_right">DNA gyrase/topoisomerase IV, subunit A, C-terminal repeat</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498615">YP_498615</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498615  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498615  DB.ID" class="gt_row gt_right">PF03989</td>
+<td headers="YP_498615  SignDesc" class="gt_row gt_right">DNA gyrase C-terminal domain, beta-propeller</td>
+<td headers="YP_498615  StartLoc" class="gt_row gt_right">556</td>
+<td headers="YP_498615  StopLoc" class="gt_row gt_right">605</td>
+<td headers="YP_498615  SLength" class="gt_row gt_right">887</td>
+<td headers="YP_498615  IPRAcc" class="gt_row gt_right">IPR006691</td>
+<td headers="YP_498615  IPRDesc" class="gt_row gt_right">DNA gyrase/topoisomerase IV, subunit A, C-terminal repeat</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498616">YP_498616</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498616  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498616  DB.ID" class="gt_row gt_right">PF01256</td>
+<td headers="YP_498616  SignDesc" class="gt_row gt_right">Carbohydrate kinase</td>
+<td headers="YP_498616  StartLoc" class="gt_row gt_right">1</td>
+<td headers="YP_498616  StopLoc" class="gt_row gt_right">225</td>
+<td headers="YP_498616  SLength" class="gt_row gt_right">233</td>
+<td headers="YP_498616  IPRAcc" class="gt_row gt_right">IPR000631</td>
+<td headers="YP_498616  IPRDesc" class="gt_row gt_right">ATP/ADP-dependent (S)-NAD(P)H-hydrate dehydratase</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498617">YP_498617</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498617  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498617  DB.ID" class="gt_row gt_right">PF00221</td>
+<td headers="YP_498617  SignDesc" class="gt_row gt_right">Aromatic amino acid lyase</td>
+<td headers="YP_498617  StartLoc" class="gt_row gt_right">10</td>
+<td headers="YP_498617  StopLoc" class="gt_row gt_right">470</td>
+<td headers="YP_498617  SLength" class="gt_row gt_right">504</td>
+<td headers="YP_498617  IPRAcc" class="gt_row gt_right">IPR001106</td>
+<td headers="YP_498617  IPRDesc" class="gt_row gt_right">Aromatic amino acid lyase</td></tr>
+    <tr><td headers="YP_498617  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498617  DB.ID" class="gt_row gt_right">PF00587</td>
+<td headers="YP_498617  SignDesc" class="gt_row gt_right">tRNA synthetase class II core domain (G, H, P, S and T)</td>
+<td headers="YP_498617  StartLoc" class="gt_row gt_right">223</td>
+<td headers="YP_498617  StopLoc" class="gt_row gt_right">400</td>
+<td headers="YP_498617  SLength" class="gt_row gt_right">428</td>
+<td headers="YP_498617  IPRAcc" class="gt_row gt_right">IPR002314</td>
+<td headers="YP_498617  IPRDesc" class="gt_row gt_right">Aminoacyl-tRNA synthetase, class II (G/ P/ S/T)</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498618">YP_498618</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498618  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498618  DB.ID" class="gt_row gt_right">PF02403</td>
+<td headers="YP_498618  SignDesc" class="gt_row gt_right">Seryl-tRNA synthetase N-terminal domain</td>
+<td headers="YP_498618  StartLoc" class="gt_row gt_right">1</td>
+<td headers="YP_498618  StopLoc" class="gt_row gt_right">107</td>
+<td headers="YP_498618  SLength" class="gt_row gt_right">428</td>
+<td headers="YP_498618  IPRAcc" class="gt_row gt_right">IPR015866</td>
+<td headers="YP_498618  IPRDesc" class="gt_row gt_right">Serine-tRNA synthetase, type1, N-terminal</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498619">YP_498619</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498619  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498619  DB.ID" class="gt_row gt_right">PF03591</td>
+<td headers="YP_498619  SignDesc" class="gt_row gt_right">AzlC protein</td>
+<td headers="YP_498619  StartLoc" class="gt_row gt_right">16</td>
+<td headers="YP_498619  StopLoc" class="gt_row gt_right">156</td>
+<td headers="YP_498619  SLength" class="gt_row gt_right">231</td>
+<td headers="YP_498619  IPRAcc" class="gt_row gt_right">IPR011606</td>
+<td headers="YP_498619  IPRDesc" class="gt_row gt_right">Branched-chain amino acid transport, permease</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498620">YP_498620</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498620  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498620  DB.ID" class="gt_row gt_right">PF05437</td>
+<td headers="YP_498620  SignDesc" class="gt_row gt_right">Branched-chain amino acid transport protein (AzlD)</td>
+<td headers="YP_498620  StartLoc" class="gt_row gt_right">8</td>
+<td headers="YP_498620  StopLoc" class="gt_row gt_right">106</td>
+<td headers="YP_498620  SLength" class="gt_row gt_right">109</td>
+<td headers="YP_498620  IPRAcc" class="gt_row gt_right">IPR008407</td>
+<td headers="YP_498620  IPRDesc" class="gt_row gt_right">Branched-chain amino acid transport, AzlD</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498621">YP_498621</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498621  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498621  DB.ID" class="gt_row gt_right">PF00561</td>
+<td headers="YP_498621  SignDesc" class="gt_row gt_right">alpha/beta hydrolase fold</td>
+<td headers="YP_498621  StartLoc" class="gt_row gt_right">38</td>
+<td headers="YP_498621  StopLoc" class="gt_row gt_right">302</td>
+<td headers="YP_498621  SLength" class="gt_row gt_right">322</td>
+<td headers="YP_498621  IPRAcc" class="gt_row gt_right">IPR000073</td>
+<td headers="YP_498621  IPRDesc" class="gt_row gt_right">Alpha/beta hydrolase fold-1</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498622">YP_498622</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498622  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498622  DB.ID" class="gt_row gt_right">PF09991</td>
+<td headers="YP_498622  SignDesc" class="gt_row gt_right">Predicted membrane protein (DUF2232)</td>
+<td headers="YP_498622  StartLoc" class="gt_row gt_right">20</td>
+<td headers="YP_498622  StopLoc" class="gt_row gt_right">298</td>
+<td headers="YP_498622  SLength" class="gt_row gt_right">312</td>
+<td headers="YP_498622  IPRAcc" class="gt_row gt_right">IPR018710</td>
+<td headers="YP_498622  IPRDesc" class="gt_row gt_right">Protein of unknown function DUF2232</td></tr>
+    <tr><td headers="YP_498622  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498622  DB.ID" class="gt_row gt_right">PF01368</td>
+<td headers="YP_498622  SignDesc" class="gt_row gt_right">DHH family</td>
+<td headers="YP_498622  StartLoc" class="gt_row gt_right">337</td>
+<td headers="YP_498622  StopLoc" class="gt_row gt_right">494</td>
+<td headers="YP_498622  SLength" class="gt_row gt_right">655</td>
+<td headers="YP_498622  IPRAcc" class="gt_row gt_right">IPR001667</td>
+<td headers="YP_498622  IPRDesc" class="gt_row gt_right">DDH domain</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498623">YP_498623</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498623  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498623  DB.ID" class="gt_row gt_right">PF03948</td>
+<td headers="YP_498623  SignDesc" class="gt_row gt_right">Ribosomal protein L9, C-terminal domain</td>
+<td headers="YP_498623  StartLoc" class="gt_row gt_right">65</td>
+<td headers="YP_498623  StopLoc" class="gt_row gt_right">148</td>
+<td headers="YP_498623  SLength" class="gt_row gt_right">150</td>
+<td headers="YP_498623  IPRAcc" class="gt_row gt_right">IPR020069</td>
+<td headers="YP_498623  IPRDesc" class="gt_row gt_right">Ribosomal protein L9, C-terminal</td></tr>
+    <tr><td headers="YP_498623  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498623  DB.ID" class="gt_row gt_right">PF02272</td>
+<td headers="YP_498623  SignDesc" class="gt_row gt_right">DHHA1 domain</td>
+<td headers="YP_498623  StartLoc" class="gt_row gt_right">516</td>
+<td headers="YP_498623  StopLoc" class="gt_row gt_right">645</td>
+<td headers="YP_498623  SLength" class="gt_row gt_right">655</td>
+<td headers="YP_498623  IPRAcc" class="gt_row gt_right">IPR003156</td>
+<td headers="YP_498623  IPRDesc" class="gt_row gt_right">DHHA1 domain</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498624">YP_498624</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498624  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498624  DB.ID" class="gt_row gt_right">PF01281</td>
+<td headers="YP_498624  SignDesc" class="gt_row gt_right">Ribosomal protein L9, N-terminal domain</td>
+<td headers="YP_498624  StartLoc" class="gt_row gt_right">1</td>
+<td headers="YP_498624  StopLoc" class="gt_row gt_right">49</td>
+<td headers="YP_498624  SLength" class="gt_row gt_right">150</td>
+<td headers="YP_498624  IPRAcc" class="gt_row gt_right">IPR020070</td>
+<td headers="YP_498624  IPRDesc" class="gt_row gt_right">Ribosomal protein L9, N-terminal</td></tr>
+    <tr><td headers="YP_498624  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498624  DB.ID" class="gt_row gt_right">PF03796</td>
+<td headers="YP_498624  SignDesc" class="gt_row gt_right">DnaB-like helicase C terminal domain</td>
+<td headers="YP_498624  StartLoc" class="gt_row gt_right">185</td>
+<td headers="YP_498624  StopLoc" class="gt_row gt_right">457</td>
+<td headers="YP_498624  SLength" class="gt_row gt_right">466</td>
+<td headers="YP_498624  IPRAcc" class="gt_row gt_right">IPR007694</td>
+<td headers="YP_498624  IPRDesc" class="gt_row gt_right">DNA helicase, DnaB-like, C-terminal</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498625">YP_498625</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498625  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498625  DB.ID" class="gt_row gt_right">PF00772</td>
+<td headers="YP_498625  SignDesc" class="gt_row gt_right">DnaB-like helicase N terminal domain</td>
+<td headers="YP_498625  StartLoc" class="gt_row gt_right">10</td>
+<td headers="YP_498625  StopLoc" class="gt_row gt_right">110</td>
+<td headers="YP_498625  SLength" class="gt_row gt_right">466</td>
+<td headers="YP_498625  IPRAcc" class="gt_row gt_right">IPR007693</td>
+<td headers="YP_498625  IPRDesc" class="gt_row gt_right">DNA helicase, DnaB-like, N-terminal</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498626">YP_498626</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498626  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498626  DB.ID" class="gt_row gt_right">PF00709</td>
+<td headers="YP_498626  SignDesc" class="gt_row gt_right">Adenylosuccinate synthetase</td>
+<td headers="YP_498626  StartLoc" class="gt_row gt_right">5</td>
+<td headers="YP_498626  StopLoc" class="gt_row gt_right">420</td>
+<td headers="YP_498626  SLength" class="gt_row gt_right">427</td>
+<td headers="YP_498626  IPRAcc" class="gt_row gt_right">IPR001114</td>
+<td headers="YP_498626  IPRDesc" class="gt_row gt_right">Adenylosuccinate synthetase</td></tr>
+    <tr><td headers="YP_498626  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498626  DB.ID" class="gt_row gt_right">PF00072</td>
+<td headers="YP_498626  SignDesc" class="gt_row gt_right">Response regulator receiver domain</td>
+<td headers="YP_498626  StartLoc" class="gt_row gt_right">5</td>
+<td headers="YP_498626  StopLoc" class="gt_row gt_right">114</td>
+<td headers="YP_498626  SLength" class="gt_row gt_right">233</td>
+<td headers="YP_498626  IPRAcc" class="gt_row gt_right">IPR001789</td>
+<td headers="YP_498626  IPRDesc" class="gt_row gt_right">Signal transduction response regulator, receiver domain</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498627">YP_498627</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498627  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498627  DB.ID" class="gt_row gt_right">PF00486</td>
+<td headers="YP_498627  SignDesc" class="gt_row gt_right">Transcriptional regulatory protein, C terminal</td>
+<td headers="YP_498627  StartLoc" class="gt_row gt_right">153</td>
+<td headers="YP_498627  StopLoc" class="gt_row gt_right">229</td>
+<td headers="YP_498627  SLength" class="gt_row gt_right">233</td>
+<td headers="YP_498627  IPRAcc" class="gt_row gt_right">IPR001867</td>
+<td headers="YP_498627  IPRDesc" class="gt_row gt_right">OmpR/PhoB-type DNA-binding domain</td></tr>
+    <tr><td headers="YP_498627  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498627  DB.ID" class="gt_row gt_right">PF13426</td>
+<td headers="YP_498627  SignDesc" class="gt_row gt_right">PAS domain</td>
+<td headers="YP_498627  StartLoc" class="gt_row gt_right">274</td>
+<td headers="YP_498627  StopLoc" class="gt_row gt_right">368</td>
+<td headers="YP_498627  SLength" class="gt_row gt_right">608</td>
+<td headers="YP_498627  IPRAcc" class="gt_row gt_right">IPR000014</td>
+<td headers="YP_498627  IPRDesc" class="gt_row gt_right">PAS domain</td></tr>
+    <tr><td headers="YP_498627  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498627  DB.ID" class="gt_row gt_right">PF00512</td>
+<td headers="YP_498627  SignDesc" class="gt_row gt_right">His Kinase A (phospho-acceptor) domain</td>
+<td headers="YP_498627  StartLoc" class="gt_row gt_right">376</td>
+<td headers="YP_498627  StopLoc" class="gt_row gt_right">441</td>
+<td headers="YP_498627  SLength" class="gt_row gt_right">608</td>
+<td headers="YP_498627  IPRAcc" class="gt_row gt_right">IPR003661</td>
+<td headers="YP_498627  IPRDesc" class="gt_row gt_right">Signal transduction histidine kinase, dimerisation/phosphoacceptor domain</td></tr>
+    <tr><td headers="YP_498627  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498627  DB.ID" class="gt_row gt_right">PF02518</td>
+<td headers="YP_498627  SignDesc" class="gt_row gt_right">Histidine kinase-, DNA gyrase B-, and HSP90-like ATPase</td>
+<td headers="YP_498627  StartLoc" class="gt_row gt_right">487</td>
+<td headers="YP_498627  StopLoc" class="gt_row gt_right">598</td>
+<td headers="YP_498627  SLength" class="gt_row gt_right">608</td>
+<td headers="YP_498627  IPRAcc" class="gt_row gt_right">IPR003594</td>
+<td headers="YP_498627  IPRDesc" class="gt_row gt_right">Histidine kinase/HSP90-like ATPase</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498628">YP_498628</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498628  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498628  DB.ID" class="gt_row gt_right">PF00672</td>
+<td headers="YP_498628  SignDesc" class="gt_row gt_right">HAMP domain</td>
+<td headers="YP_498628  StartLoc" class="gt_row gt_right">201</td>
+<td headers="YP_498628  StopLoc" class="gt_row gt_right">252</td>
+<td headers="YP_498628  SLength" class="gt_row gt_right">608</td>
+<td headers="YP_498628  IPRAcc" class="gt_row gt_right">IPR003660</td>
+<td headers="YP_498628  IPRDesc" class="gt_row gt_right">HAMP domain</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498629">YP_498629</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498629  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498629  DB.ID" class="gt_row gt_right">PF07435</td>
+<td headers="YP_498629  SignDesc" class="gt_row gt_right">YycH protein</td>
+<td headers="YP_498629  StartLoc" class="gt_row gt_right">1</td>
+<td headers="YP_498629  StopLoc" class="gt_row gt_right">424</td>
+<td headers="YP_498629  SLength" class="gt_row gt_right">427</td>
+<td headers="YP_498629  IPRAcc" class="gt_row gt_right">IPR009996</td>
+<td headers="YP_498629  IPRDesc" class="gt_row gt_right">Regulatory protein YycH</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498630">YP_498630</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498630  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498630  DB.ID" class="gt_row gt_right">PF09648</td>
+<td headers="YP_498630  SignDesc" class="gt_row gt_right">YycI protein</td>
+<td headers="YP_498630  StartLoc" class="gt_row gt_right">38</td>
+<td headers="YP_498630  StopLoc" class="gt_row gt_right">253</td>
+<td headers="YP_498630  SLength" class="gt_row gt_right">262</td>
+<td headers="YP_498630  IPRAcc" class="gt_row gt_right">IPR018604</td>
+<td headers="YP_498630  IPRDesc" class="gt_row gt_right">Regulatory protein YycH-like</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498633">YP_498633</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498633  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498633  DB.ID" class="gt_row gt_right">PF00753</td>
+<td headers="YP_498633  SignDesc" class="gt_row gt_right">Metallo-beta-lactamase superfamily</td>
+<td headers="YP_498633  StartLoc" class="gt_row gt_right">14</td>
+<td headers="YP_498633  StopLoc" class="gt_row gt_right">220</td>
+<td headers="YP_498633  SLength" class="gt_row gt_right">266</td>
+<td headers="YP_498633  IPRAcc" class="gt_row gt_right">IPR001279</td>
+<td headers="YP_498633  IPRDesc" class="gt_row gt_right">Metallo-beta-lactamase</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498636">YP_498636</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498636  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498636  DB.ID" class="gt_row gt_right">PF02590</td>
+<td headers="YP_498636  SignDesc" class="gt_row gt_right">Predicted SPOUT methyltransferase</td>
+<td headers="YP_498636  StartLoc" class="gt_row gt_right">1</td>
+<td headers="YP_498636  StopLoc" class="gt_row gt_right">158</td>
+<td headers="YP_498636  SLength" class="gt_row gt_right">159</td>
+<td headers="YP_498636  IPRAcc" class="gt_row gt_right">IPR003742</td>
+<td headers="YP_498636  IPRDesc" class="gt_row gt_right">RNA methyltransferase RlmH</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498637">YP_498637</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498637  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498637  DB.ID" class="gt_row gt_right">PF19614</td>
+<td headers="YP_498637  SignDesc" class="gt_row gt_right">Family of unknown function (DUF6119)</td>
+<td headers="YP_498637  StartLoc" class="gt_row gt_right">29</td>
+<td headers="YP_498637  StopLoc" class="gt_row gt_right">479</td>
+<td headers="YP_498637  SLength" class="gt_row gt_right">581</td>
+<td headers="YP_498637  IPRAcc" class="gt_row gt_right">IPR026487</td>
+<td headers="YP_498637  IPRDesc" class="gt_row gt_right">Sporadically distributed protein CHP04141</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498639">YP_498639</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498639  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498639  DB.ID" class="gt_row gt_right">PF01207</td>
+<td headers="YP_498639  SignDesc" class="gt_row gt_right">Dihydrouridine synthase (Dus)</td>
+<td headers="YP_498639  StartLoc" class="gt_row gt_right">11</td>
+<td headers="YP_498639  StopLoc" class="gt_row gt_right">137</td>
+<td headers="YP_498639  SLength" class="gt_row gt_right">150</td>
+<td headers="YP_498639  IPRAcc" class="gt_row gt_right">IPR035587</td>
+<td headers="YP_498639  IPRDesc" class="gt_row gt_right">DUS-like, FMN-binding domain</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498640">YP_498640</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498640  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498640  DB.ID" class="gt_row gt_right">PF01925</td>
+<td headers="YP_498640  SignDesc" class="gt_row gt_right">Sulfite exporter TauE/SafE</td>
+<td headers="YP_498640  StartLoc" class="gt_row gt_right">10</td>
+<td headers="YP_498640  StopLoc" class="gt_row gt_right">247</td>
+<td headers="YP_498640  SLength" class="gt_row gt_right">251</td>
+<td headers="YP_498640  IPRAcc" class="gt_row gt_right">IPR002781</td>
+<td headers="YP_498640  IPRDesc" class="gt_row gt_right">Transmembrane protein TauE-like</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498641">YP_498641</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498641  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498641  DB.ID" class="gt_row gt_right">PF02583</td>
+<td headers="YP_498641  SignDesc" class="gt_row gt_right">Metal-sensitive transcriptional repressor</td>
+<td headers="YP_498641  StartLoc" class="gt_row gt_right">4</td>
+<td headers="YP_498641  StopLoc" class="gt_row gt_right">83</td>
+<td headers="YP_498641  SLength" class="gt_row gt_right">86</td>
+<td headers="YP_498641  IPRAcc" class="gt_row gt_right">IPR003735</td>
+<td headers="YP_498641  IPRDesc" class="gt_row gt_right">Metal-sensitive transcriptional repressor</td></tr>
+    <tr><td headers="YP_498641  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498641  DB.ID" class="gt_row gt_right">PF01206</td>
+<td headers="YP_498641  SignDesc" class="gt_row gt_right">Sulfurtransferase TusA</td>
+<td headers="YP_498641  StartLoc" class="gt_row gt_right">120</td>
+<td headers="YP_498641  StopLoc" class="gt_row gt_right">188</td>
+<td headers="YP_498641  SLength" class="gt_row gt_right">355</td>
+<td headers="YP_498641  IPRAcc" class="gt_row gt_right">IPR001455</td>
+<td headers="YP_498641  IPRDesc" class="gt_row gt_right">TusA-like domain</td></tr>
+    <tr><td headers="YP_498641  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498641  DB.ID" class="gt_row gt_right">PF13686</td>
+<td headers="YP_498641  SignDesc" class="gt_row gt_right">DsrE/DsrF/DrsH-like family</td>
+<td headers="YP_498641  StartLoc" class="gt_row gt_right">201</td>
+<td headers="YP_498641  StopLoc" class="gt_row gt_right">354</td>
+<td headers="YP_498641  SLength" class="gt_row gt_right">355</td>
+<td headers="YP_498641  IPRAcc" class="gt_row gt_right">IPR032836</td>
+<td headers="YP_498641  IPRDesc" class="gt_row gt_right">DsrE2-like family</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="YP_498642">YP_498642</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="YP_498642  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498642  DB.ID" class="gt_row gt_right">PF00753</td>
+<td headers="YP_498642  SignDesc" class="gt_row gt_right">Metallo-beta-lactamase superfamily</td>
+<td headers="YP_498642  StartLoc" class="gt_row gt_right">13</td>
+<td headers="YP_498642  StopLoc" class="gt_row gt_right">168</td>
+<td headers="YP_498642  SLength" class="gt_row gt_right">444</td>
+<td headers="YP_498642  IPRAcc" class="gt_row gt_right">IPR001279</td>
+<td headers="YP_498642  IPRDesc" class="gt_row gt_right">Metallo-beta-lactamase</td></tr>
+    <tr><td headers="YP_498642  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498642  DB.ID" class="gt_row gt_right">PF00581</td>
+<td headers="YP_498642  SignDesc" class="gt_row gt_right">Rhodanese-like domain</td>
+<td headers="YP_498642  StartLoc" class="gt_row gt_right">15</td>
+<td headers="YP_498642  StopLoc" class="gt_row gt_right">98</td>
+<td headers="YP_498642  SLength" class="gt_row gt_right">355</td>
+<td headers="YP_498642  IPRAcc" class="gt_row gt_right">IPR001763</td>
+<td headers="YP_498642  IPRDesc" class="gt_row gt_right">Rhodanese-like domain</td></tr>
+    <tr><td headers="YP_498642  Analysis" class="gt_row gt_right">Pfam</td>
+<td headers="YP_498642  DB.ID" class="gt_row gt_right">PF00581</td>
+<td headers="YP_498642  SignDesc" class="gt_row gt_right">Rhodanese-like domain</td>
+<td headers="YP_498642  StartLoc" class="gt_row gt_right">359</td>
+<td headers="YP_498642  StopLoc" class="gt_row gt_right">439</td>
+<td headers="YP_498642  SLength" class="gt_row gt_right">444</td>
+<td headers="YP_498642  IPRAcc" class="gt_row gt_right">IPR001763</td>
+<td headers="YP_498642  IPRDesc" class="gt_row gt_right">Rhodanese-like domain</td></tr>
+  </tbody>
+  <tfoot class="gt_sourcenotes">
+    <tr>
+      <td class="gt_sourcenote" colspan="8">More information on the <a href="https://gt.rstudio.com/index.html">GT package</a>.</td>
+    </tr>
+  </tfoot>
+  
+</table>
+</div>
+</div>
+</div>
+
+
 </section>
 </section>
 

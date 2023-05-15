@@ -15,7 +15,7 @@ install.packages(c("fontawesome", "rmarkdown", "kableExtra", "gt", "DT"),
                  dependencies = T)
 # try out shiny/flex dashboard
 # install.packages(c("shiny", "shinydashboard", "flexdashboard"),
-                 # dependencies = T)
+# dependencies = T)
 ```
 
 ```{r load_libs, eval=T, echo=T, warning=F, include=FALSE}
@@ -76,8 +76,8 @@ paged_table(ipr_combnd)
 ## w/ kableExtra 
 ```{r kableExtra, eval=TRUE, echo=T, warning=FALSE}
 
-ipr_combnd %>%
-  head |>
+ipr_combnd |>
+  head() |>
   kable(caption = "Table 1. Annotate with kableExtra") |>
   kable_styling(c("striped", "hover", "condensed"), full_width = F,
                 position = "left") |>
@@ -117,4 +117,52 @@ DT::datatable(ipr_combnd,
                 lengthMenu = c(10, 25, 100)
               ))
 
+```
+
+## w/ gt
+```{r gt}
+ipr_combnd |>
+  head() |> 
+  gt()
+
+ipr_gt <- ipr_combnd |>
+  group_by(AccNum) |> 
+  gt() |> 
+  tab_header(title=md("IPRScan Results"), subtitle="using GT") |>
+  tab_source_note(md("More information on the [GT package](https://gt.rstudio.com/index.html).")) |> 
+  cols_align(align="right", columns=TRUE) |> 
+  tab_spanner(label="Protein", columns=matches("AccNum")) |> 
+  tab_spanner(label="Domains", columns=matches("Analysis|DB.ID|SignDesc")) |> 
+  tab_spanner(label="DomLoc", columns=matches("Loc|Length")) |>
+  tab_spanner(label="IPR", columns=matches("IPR")) |>
+  tab_options(
+    # Headings; Titles
+		heading.background.color="#3C5488",
+		heading.border.bottom.color="#989898",
+		heading.title.font.size="12px",
+		heading.subtitle.font.size="11px",
+		# Column labels
+		column_labels.background.color="#4DBBD5", #B09C85FF
+		column_labels.font.size="12px",
+		# Stubs
+		stub.background.color="#4DBBD5", #B09C85FF
+		stub.border.style="dashed",
+		stub.border.color="#989898",
+		stub.border.width="1px",
+		# Row groups
+		row_group.background.color="coral3", #FFEFDB80
+		row_group.border.top.color="#989898",
+		row_group.border.bottom.style="none",
+		row_group.font.size="12px",
+		# Summary rows
+		summary_row.border.color="#989898",
+		# summary_row.background.color="#FFEBEE",
+		# grand_summary_row.background.color="#FFFFFF",
+		# Table
+		table.font.color="#323232",
+		table_body.hlines.color="#989898",
+		table_body.border.top.color="#989898",
+		table.font.size="10px",
+		table.width="80%")
+ipr_gt
 ```
