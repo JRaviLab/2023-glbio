@@ -20,6 +20,69 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -59,6 +122,10 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 <script src="site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
 <link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
 <script src="site_libs/datatables-binding-0.27/datatables.js"></script>
@@ -66,6 +133,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/dt-core-1.12.1/css/jquery.dataTables.min.css" rel="stylesheet">
 <link href="site_libs/dt-core-1.12.1/css/jquery.dataTables.extra.css" rel="stylesheet">
 <script src="site_libs/dt-core-1.12.1/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
+<script src="site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
 <link href="site_libs/dt-ext-buttons-1.12.1/css/buttons.dataTables.min.css" rel="stylesheet">
 <script src="site_libs/dt-ext-buttons-1.12.1/js/dataTables.buttons.min.js"></script>
 <script src="site_libs/dt-ext-buttons-1.12.1/js/buttons.html5.min.js"></script>
@@ -75,8 +144,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/dt-ext-fixedcolumns-1.12.1/js/dataTables.fixedColumns.min.js"></script>
 <link href="site_libs/dt-ext-rowreorder-1.12.1/css/rowReorder.dataTables.min.css" rel="stylesheet">
 <script src="site_libs/dt-ext-rowreorder-1.12.1/js/dataTables.rowReorder.min.js"></script>
-<link href="site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
-<script src="site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+<link href="site_libs/dt-ext-responsive-1.12.1/css/responsive.dataTables.min.css" rel="stylesheet">
+<script src="site_libs/dt-ext-responsive-1.12.1/js/dataTables.responsive.min.js"></script>
 
 
 </head>
@@ -124,6 +193,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#lets-build-some-tables" id="toc-lets-build-some-tables" class="nav-link active" data-scroll-target="#lets-build-some-tables">Let’s build some tables!</a>
   <ul class="collapse">
   <li><a href="#explore-your-ipr-results-here" id="toc-explore-your-ipr-results-here" class="nav-link" data-scroll-target="#explore-your-ipr-results-here">Explore your IPR results here</a></li>
+  <li><a href="#w-knitr" id="toc-w-knitr" class="nav-link" data-scroll-target="#w-knitr">w/ knitr</a></li>
+  <li><a href="#w-rmarkdown" id="toc-w-rmarkdown" class="nav-link" data-scroll-target="#w-rmarkdown">w/ rmarkdown</a></li>
+  <li><a href="#w-kableextra" id="toc-w-kableextra" class="nav-link" data-scroll-target="#w-kableextra">w/ kableExtra</a></li>
+  <li><a href="#w-dt-datatable" id="toc-w-dt-datatable" class="nav-link" data-scroll-target="#w-dt-datatable">w/ DT, datatable</a>
+  <ul class="collapse">
+  <li><a href="#adding-extensions" id="toc-adding-extensions" class="nav-link" data-scroll-target="#adding-extensions">adding extensions</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -153,15 +229,188 @@ ul.task-list li input[type="checkbox"] {
 <section id="explore-your-ipr-results-here" class="level2">
 <h2 class="anchored" data-anchor-id="explore-your-ipr-results-here">Explore your IPR results here</h2>
 <p>You can search, sort, and query the table interactively. In addition, you can show/hide specific columns using the <code>Column visibility</code> button.</p>
+</section>
+<section id="w-knitr" class="level2">
+<h2 class="anchored" data-anchor-id="w-knitr">w/ knitr</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="fu">head</span>(ipr_combnd), <span class="at">format=</span><span class="st">'html'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> AccNum </th>
+   <th style="text-align:left;"> Analysis </th>
+   <th style="text-align:left;"> DB.ID </th>
+   <th style="text-align:left;"> SignDesc </th>
+   <th style="text-align:right;"> StartLoc </th>
+   <th style="text-align:right;"> StopLoc </th>
+   <th style="text-align:right;"> SLength </th>
+   <th style="text-align:left;"> IPRAcc </th>
+   <th style="text-align:left;"> IPRDesc </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> EMBOSS_001 </td>
+   <td style="text-align:left;"> Pfam </td>
+   <td style="text-align:left;"> PF00520 </td>
+   <td style="text-align:left;"> Ion transport protein </td>
+   <td style="text-align:right;"> 96 </td>
+   <td style="text-align:right;"> 318 </td>
+   <td style="text-align:right;"> 844 </td>
+   <td style="text-align:left;"> IPR005821 </td>
+   <td style="text-align:left;"> Ion transport domain </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> EMBOSS_001 </td>
+   <td style="text-align:left;"> Pfam </td>
+   <td style="text-align:left;"> PF03520 </td>
+   <td style="text-align:left;"> KCNQ voltage-gated potassium channel </td>
+   <td style="text-align:right;"> 438 </td>
+   <td style="text-align:right;"> 622 </td>
+   <td style="text-align:right;"> 844 </td>
+   <td style="text-align:left;"> IPR013821 </td>
+   <td style="text-align:left;"> Potassium channel, voltage dependent, KCNQ, C-terminal </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> EMBOSS_001 </td>
+   <td style="text-align:left;"> Pfam </td>
+   <td style="text-align:left;"> PF16642 </td>
+   <td style="text-align:left;"> Unstructured region on Potassium channel subunit alpha KvLQT2 </td>
+   <td style="text-align:right;"> 637 </td>
+   <td style="text-align:right;"> 727 </td>
+   <td style="text-align:right;"> 844 </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> - </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> EMBOSS_001 </td>
+   <td style="text-align:left;"> Pfam </td>
+   <td style="text-align:left;"> PF11956 </td>
+   <td style="text-align:left;"> Ankyrin-G binding motif of KCNQ2-3 </td>
+   <td style="text-align:right;"> 741 </td>
+   <td style="text-align:right;"> 840 </td>
+   <td style="text-align:right;"> 844 </td>
+   <td style="text-align:left;"> IPR020969 </td>
+   <td style="text-align:left;"> Ankyrin-G binding site </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</section>
+<section id="w-rmarkdown" class="level2">
+<h2 class="anchored" data-anchor-id="w-rmarkdown">w/ rmarkdown</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">paged_table</span>(ipr_combnd)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["AccNum"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Analysis"],"name":[2],"type":["chr"],"align":["left"]},{"label":["DB.ID"],"name":[3],"type":["chr"],"align":["left"]},{"label":["SignDesc"],"name":[4],"type":["chr"],"align":["left"]},{"label":["StartLoc"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["StopLoc"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["SLength"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["IPRAcc"],"name":[8],"type":["chr"],"align":["left"]},{"label":["IPRDesc"],"name":[9],"type":["chr"],"align":["left"]}],"data":[{"1":"EMBOSS_001","2":"Pfam","3":"PF00520","4":"Ion transport protein","5":"96","6":"318","7":"844","8":"IPR005821","9":"Ion transport domain"},{"1":"EMBOSS_001","2":"Pfam","3":"PF03520","4":"KCNQ voltage-gated potassium channel","5":"438","6":"622","7":"844","8":"IPR013821","9":"Potassium channel, voltage dependent, KCNQ, C-terminal"},{"1":"EMBOSS_001","2":"Pfam","3":"PF16642","4":"Unstructured region on Potassium channel subunit alpha KvLQT2","5":"637","6":"727","7":"844","8":"-","9":"-"},{"1":"EMBOSS_001","2":"Pfam","3":"PF11956","4":"Ankyrin-G binding motif of KCNQ2-3","5":"741","6":"840","7":"844","8":"IPR020969","9":"Ankyrin-G binding site"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+</section>
+<section id="w-kableextra" class="level2">
+<h2 class="anchored" data-anchor-id="w-kableextra">w/ kableExtra</h2>
 <div class="cell">
 <div class="cell-output-display">
 
-<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-81c0795aefb71bf16096" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-81c0795aefb71bf16096">{"x":{"filter":"none","vertical":false,"extensions":["Buttons","FixedColumns","RowReorder"],"data":[["1","2","3","4"],["EMBOSS_001","EMBOSS_001","EMBOSS_001","EMBOSS_001"],["Pfam","Pfam","Pfam","Pfam"],["PF00520","PF03520","PF16642","PF11956"],["Ion transport protein","KCNQ voltage-gated potassium channel","Unstructured region on Potassium channel subunit alpha KvLQT2","Ankyrin-G binding motif of KCNQ2-3"],[96,438,637,741],[318,622,727,840],[844,844,844,844],["IPR005821","IPR013821","-","IPR020969"],["Ion transport domain","Potassium channel, voltage dependent, KCNQ, C-terminal","-","Ankyrin-G binding site"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>AccNum<\/th>\n      <th>Analysis<\/th>\n      <th>DB.ID<\/th>\n      <th>SignDesc<\/th>\n      <th>StartLoc<\/th>\n      <th>StopLoc<\/th>\n      <th>SLength<\/th>\n      <th>IPRAcc<\/th>\n      <th>IPRDesc<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"buttons":[{"extend":"colvis","columns":[3,4,5,6,7,8,9,10,11]}],"fixedColumns":{"leftColumns":2},"rowReorder":true,"order":[["0","asc"]],"scrollX":true,"lengthMenu":[10,25,100],"columnDefs":[{"className":"dt-right","targets":[5,6,7]},{"orderable":false,"targets":0}],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<table class="table table-striped table-hover table-condensed" style="width: auto !important; ">
+<caption>Table 1. Annotate with kableExtra</caption>
+ <thead>
+<tr>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">protein</div></th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="8"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">domains</div></th>
+</tr>
+  <tr>
+   <th style="text-align:left;font-style: italic;"> AccNum </th>
+   <th style="text-align:left;font-style: italic;"> Analysis </th>
+   <th style="text-align:left;font-style: italic;"> DB.ID </th>
+   <th style="text-align:left;font-style: italic;"> SignDesc </th>
+   <th style="text-align:right;font-style: italic;"> StartLoc </th>
+   <th style="text-align:right;font-style: italic;"> StopLoc </th>
+   <th style="text-align:right;font-style: italic;"> SLength </th>
+   <th style="text-align:left;font-style: italic;"> IPRAcc </th>
+   <th style="text-align:left;font-style: italic;"> IPRDesc </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> EMBOSS_001 </td>
+   <td style="text-align:left;"> Pfam </td>
+   <td style="text-align:left;"> PF00520 </td>
+   <td style="text-align:left;"> Ion transport protein </td>
+   <td style="text-align:right;"> 96 </td>
+   <td style="text-align:right;"> 318 </td>
+   <td style="text-align:right;"> 844 </td>
+   <td style="text-align:left;"> IPR005821 </td>
+   <td style="text-align:left;"> Ion transport domain </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> EMBOSS_001 </td>
+   <td style="text-align:left;"> Pfam </td>
+   <td style="text-align:left;"> PF03520 </td>
+   <td style="text-align:left;"> KCNQ voltage-gated potassium channel </td>
+   <td style="text-align:right;"> 438 </td>
+   <td style="text-align:right;"> 622 </td>
+   <td style="text-align:right;"> 844 </td>
+   <td style="text-align:left;"> IPR013821 </td>
+   <td style="text-align:left;"> Potassium channel, voltage dependent, KCNQ, C-terminal </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> EMBOSS_001 </td>
+   <td style="text-align:left;"> Pfam </td>
+   <td style="text-align:left;"> PF16642 </td>
+   <td style="text-align:left;"> Unstructured region on Potassium channel subunit alpha KvLQT2 </td>
+   <td style="text-align:right;"> 637 </td>
+   <td style="text-align:right;"> 727 </td>
+   <td style="text-align:right;"> 844 </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> - </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> EMBOSS_001 </td>
+   <td style="text-align:left;"> Pfam </td>
+   <td style="text-align:left;"> PF11956 </td>
+   <td style="text-align:left;"> Ankyrin-G binding motif of KCNQ2-3 </td>
+   <td style="text-align:right;"> 741 </td>
+   <td style="text-align:right;"> 840 </td>
+   <td style="text-align:right;"> 844 </td>
+   <td style="text-align:left;"> IPR020969 </td>
+   <td style="text-align:left;"> Ankyrin-G binding site </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</section>
+<section id="w-dt-datatable" class="level2">
+<h2 class="anchored" data-anchor-id="w-dt-datatable">w/ DT, datatable</h2>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-df8cafd306d63f943c91" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-df8cafd306d63f943c91">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["1","2","3","4"],["EMBOSS_001","EMBOSS_001","EMBOSS_001","EMBOSS_001"],["Pfam","Pfam","Pfam","Pfam"],["PF00520","PF03520","PF16642","PF11956"],["Ion transport protein","KCNQ voltage-gated potassium channel","Unstructured region on Potassium channel subunit alpha KvLQT2","Ankyrin-G binding motif of KCNQ2-3"],[96,438,637,741],[318,622,727,840],[844,844,844,844],["IPR005821","IPR013821","-","IPR020969"],["Ion transport domain","Potassium channel, voltage dependent, KCNQ, C-terminal","-","Ankyrin-G binding site"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>AccNum<\/th>\n      <th>Analysis<\/th>\n      <th>DB.ID<\/th>\n      <th>SignDesc<\/th>\n      <th>StartLoc<\/th>\n      <th>StopLoc<\/th>\n      <th>SLength<\/th>\n      <th>IPRAcc<\/th>\n      <th>IPRDesc<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":8,"columnDefs":[{"className":"dt-right","targets":[5,6,7]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[8,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<section id="adding-extensions" class="level3">
+<h3 class="anchored" data-anchor-id="adding-extensions">adding extensions</h3>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-6b3175535f9050ee4731" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-6b3175535f9050ee4731">{"x":{"filter":"none","vertical":false,"extensions":["Buttons","FixedColumns","RowReorder","Responsive"],"data":[["1","2","3","4"],["EMBOSS_001","EMBOSS_001","EMBOSS_001","EMBOSS_001"],["Pfam","Pfam","Pfam","Pfam"],["PF00520","PF03520","PF16642","PF11956"],["Ion transport protein","KCNQ voltage-gated potassium channel","Unstructured region on Potassium channel subunit alpha KvLQT2","Ankyrin-G binding motif of KCNQ2-3"],[96,438,637,741],[318,622,727,840],[844,844,844,844],["IPR005821","IPR013821","-","IPR020969"],["Ion transport domain","Potassium channel, voltage dependent, KCNQ, C-terminal","-","Ankyrin-G binding site"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>AccNum<\/th>\n      <th>Analysis<\/th>\n      <th>DB.ID<\/th>\n      <th>SignDesc<\/th>\n      <th>StartLoc<\/th>\n      <th>StopLoc<\/th>\n      <th>SLength<\/th>\n      <th>IPRAcc<\/th>\n      <th>IPRDesc<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"dom":"Bfrtip","buttons":["colvis"],"fixedColumns":{"leftColumns":2},"fixedHeader":true,"rowReorder":true,"order":[["0","asc"]],"scrollX":true,"lengthMenu":[10,25,100],"columnDefs":[{"className":"dt-right","targets":[5,6,7]},{"orderable":false,"targets":0}],"autoWidth":false,"orderClasses":false,"responsive":true}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 
 
+</section>
 </section>
 </section>
 

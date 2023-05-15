@@ -2,14 +2,25 @@
 title: "Tables"
 ---
 
-```{r setup, eval=TRUE, echo=FALSE, include=FALSE, warning=FALSE}
+```{r installations, eval=F, echo=F, include=F, warning=F}
+devtools::install_github("jravilab/iprscanr")
+# install.packages(c("tidyverse", "here"))
+install.packages(c("fontawesome", "rmarkdown", "kableExtra", "gt", "DT"),
+                 dependencies = T)
+```
+
+```{r setup, eval=T, echo=F, include=F, warning=F}
 library(tidyverse)
 library(here)
-# library(shiny); library(shinydashboard); library(flexdashboard)
-library(DT)
 library(fontawesome)
-# devtools::install_github("jravilab/iprscanr")
+# data package
 library(iprscanr)
+# library(shiny); library(shinydashboard); library(flexdashboard)
+# table packages
+library(rmarkdown)
+library(kableExtra)
+library(DT)
+library(gt)
 ```
 
 # Let's build some tables!
@@ -20,9 +31,8 @@ You can search, sort, and query the table interactively. In addition, you can sh
 
 ```{r load_data, eval=TRUE, echo=FALSE, include=FALSE, warning=FALSE}
 
-
-infile_ipr <- system.file("inst/extdata/ex-out-CAA75348.tsv",
-                          package="iprscanr")
+infile_ipr <- paste0(system.file(package="iprscanr"),
+                     "/extdata/ex-out-CAA75348.tsv")
 ipr_combnd <- read_tsv(infile_ipr, col_names=F)
 
 ipr_colnames <- c("AccNum", "SeqMD5Digest", "SLength", "Analysis",
@@ -30,39 +40,60 @@ ipr_colnames <- c("AccNum", "SeqMD5Digest", "SLength", "Analysis",
                   "Status", "RunDate", "IPRAcc", "IPRDesc")
 colnames(ipr_combnd) <- ipr_colnames
 
-```
-
-```{r table, eval=TRUE, echo=FALSE, warning=FALSE}
-
 ipr_combnd <- ipr_combnd %>%
   select(AccNum, Analysis, DB.ID, SignDesc,
          StartLoc, StopLoc, SLength,
          IPRAcc, IPRDesc) %>%
-	arrange(AccNum, StartLoc) #%>%
-	#filter(!is.na(AccNum))
+  arrange(AccNum, StartLoc)
+```
 
-# blast_combnd %>%
-# 	filter(QueryName==input$QueryName) %>%
-# 	rmarkdown::paged_table()
+## w/ knitr
+```{r knitr}
+knitr::kable(head(ipr_combnd), format='html')
 
-DT::datatable(ipr_combnd, extensions = c('Buttons', 'FixedColumns', 'RowReorder'),
-							options = list(
-	pageLength = 10,
-	#dom = 'Bfrtip',
-	#buttons = I('colvis'),
-	buttons=list(list(extend = 'colvis', columns = c(3:11))),
-	fixedColumns = list(leftColumns = 2), #, rightColumns = 1),
-	rowReorder = TRUE, order = list(c(0, 'asc')),
-	scrollX = TRUE,
-	lengthMenu = c(10, 25, 100)
-))
+```
 
+## w/ rmarkdown
+```{r rmarkdown}
+paged_table(ipr_combnd)
+```
 
-# output$blast <- DT::renderDataTable(({
-#   DT::datatable(blast_combnd, filter='top',
-#                 options = list(orderClasses = TRUE, autoWidth=T))
-# }))
-#
-# DT::dataTableOutput("blast", height=1000, width=800)
+## w/ kableExtra 
+```{r kableExtra, eval=TRUE, echo=FALSE, warning=FALSE}
+
+ipr_combnd %>% head %>%
+  kable(caption = "Table 1. Annotate with kableExtra") %>%
+  kable_styling(c("striped", "hover", "condensed"), full_width = F,
+                position = "left") %>%
+  add_header_above(c("protein"=1, "domains" = 8)) %>%
+  column_spec(1, bold = T) %>%
+  row_spec(0, italic = T)
+
+```
+
+## w/ DT, datatable
+```{r datatable, eval=TRUE, echo=FALSE, warning=FALSE}
+ipr_combnd |>
+  head() |> 
+  datatable(fillContainer=FALSE,
+            options=list(pageLength=8))
+```
+### adding extensions
+```{r datatable2, eval=TRUE, echo=FALSE, warning=FALSE}
+
+DT::datatable(ipr_combnd,
+              extensions = c('Buttons', 'FixedColumns',
+                             'RowReorder', 'Responsive'),
+              options = list(
+                pageLength = 5,
+                dom = 'Bfrtip',
+                buttons = I('colvis'),
+                buttons=list(list(extend = 'colvis', columns = c(5:9))),
+                fixedColumns = list(leftColumns = 2),
+                fixedHeader = TRUE,
+                rowReorder = TRUE, order = list(c(0, 'asc')),
+                scrollX = TRUE,
+                lengthMenu = c(10, 25, 100)
+              ))
 
 ```
