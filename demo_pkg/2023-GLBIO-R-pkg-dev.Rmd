@@ -25,7 +25,8 @@ install.packages(dev_pkgs)
 
 Libraries used for this example package
 ```{r pkg_deps}
-pkgs <- c("BiocManager", "httr", "tibble", "dplyr", "reader", "stringr", "here", "magrittr")
+pkgs <- c("BiocManager", "httr", "tibble", "dplyr",
+          "readr", "stringr", "here", "magrittr")
 install.packages(pkgs)
 
 ```
@@ -59,7 +60,7 @@ usethis::create_package(".")
 
 ```{r git}
 # initialize git repo and add a .gitignore
-# optional rsudtio restart
+# optional RStudio restart
 usethis::use_git()
 ```
 
@@ -72,14 +73,14 @@ Both private and public (exported) R functions live in R/ folder.
 
 ```{r function_file}
 # A convenience function that create a .R file called ipr_submit in the R/ folder
-# and opens the file if you're in Rstudio
+# and opens the file if you're in RStudio
 usethis::use_r("submit_ipr.R")
 ```
 
 This is where you would write/add your own functions.
 
 Each file can have multiple functions, and there can be variable amounts of 
-private and public ones. By convention, private functions in R pacakge development 
+private and public ones. By convention, private functions in R package development 
 are prefixed with a "." (e.g., .my_function) to explicitly indicate they are not to be exported. 
 However, in the methods we'll be using, we will explicitly declare public 
 (exported functions). Therefore, we will not rely on this convention, but 
@@ -569,7 +570,7 @@ usethis::use_pipe()
 
 ## Loading local a function
 
-`devtools::load_all()` is like running `library(<pkg>)` execpt for local functions.
+`devtools::load_all()` is like running `library(<pkg>)` except for local functions.
 Similar to other functions we've been using, the first argument is the path to 
 the local package.
 
@@ -695,4 +696,4 @@ usethis::use_readme_rmd()
 # Conclusion
 
 - usethis and devtools provide a suite of functions to automate R package development
-- Writing R code in package format pormotes modularity, testing, proper documentation, etc.
+- Writing R code in package format promotes modularity, testing, proper documentation, etc.
