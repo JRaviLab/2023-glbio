@@ -79,7 +79,7 @@ ui <- fluidPage(
             , style="margin-bottom: 20px;"),
 
             tabsetPanel(
-                tabPanel("Results", 
+                tabPanel("Results",
                     withSpinner(
                         DT::dataTableOutput("ipr_results")
                     ),
@@ -228,6 +228,10 @@ server <- function(input, output) {
 # =============================================================================
 
 console_stderr("* Application Started")
+
+# add to configure biocmanager as a source when deploying to shinyapps.io
+library(BiocManager)
+options(repos = BiocManager::repositories())
 
 # ignore RNG errors
 options(future.rng.onMisuse="ignore")
