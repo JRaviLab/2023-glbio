@@ -1,6 +1,8 @@
 # MolEvolvR BTS: When and how to build a web-app and software package?
 _Companion repository for the half-day workshop at [GLBIO 2023](https://www.iscb.org/glbio2023-programme/workshops-tutorials)_
 
+📌 [Slidedeck](https://docs.google.com/presentation/d/11rbEVqcfKtYob-5KI3BWqU71ZB4PYeJOu7jtH5NLx2M/edit#slide=id.g2434ee0d728_0_10) | [Feedback form](//bit.ly/2023glbio-exit) | **Demos**: [R-pkg](https://github.com/JRaviLab/2023-glbio/tree/main/demo_pkg), [Quarto](https://github.com/JRaviLab/2023-glbio/tree/main/demo_quarto), [Shiny Web-app & Docker](https://github.com/JRaviLab/2023-glbio/tree/main/demo_webapp)
+
 ## What's this workshop about?
 We recently developed a web application, [MolEvolvR](http://jravilab.org/molevolvr) ([DOI](https://doi.org/10.1101/2022.02.18.461833)), to characterize proteins using molecular evolution and phylogeny. This session will serve as a behind-the-scenes (BTS) sneak peek into what MolEvolvR does, how it does it, and its origin story. The hands-on training component will provide the basic principles of why and how to build a dashboard/web-app for your biological problem of interest with R/Shiny, and when and how you would set up your back-end as an R package.
 
